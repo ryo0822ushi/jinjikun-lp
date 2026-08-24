@@ -1,0 +1,408 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ・資料請求｜スーパー人事くん</title>
+<meta name="description" content="スーパー人事くんへのお問い合わせ・資料請求はこちら。1営業日以内にご連絡します。お電話（0120-058-053）でも受け付けています。">
+<link rel="canonical" href="https://jinjikun.com/contact.html">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%2300A3C4%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2736%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27 font-weight=%27bold%27%3E人%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --ink:#14181C; --muted:#5F6B76; --line:#E5E9EC;
+  --ground:#FFFFFF; --tint:#F4F8FA;
+  --teal:#00A3C4; --teal-deep:#007A94; --teal-soft:#E0F4F9;
+  --red:#FF4438; --red-deep:#E03A2F;
+  --gold-soft:#FBF2E2; --gold:#C98A2E;
+  --on-red:#FFFFFF; --card:#FFFFFF;
+  --hero-top:#D9F1F7;
+  --shadow:0 2px 0.375rem rgba(20,24,28,.06), 0 1rem 2.5rem rgba(20,24,28,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#EDF1F4; --muted:#9AA7B1; --line:#2A3238;
+    --ground:#14181C; --tint:#1A2126;
+    --teal:#2BB8D6; --teal-deep:#7FD9EA; --teal-soft:#0D2C34;
+    --red:#FF574C; --red-deep:#FF7A70;
+    --gold-soft:#2A2115; --gold:#E0AE5E;
+    --on-red:#1C0F0E; --card:#1A2126;
+    --hero-top:#0E2A31;
+    --shadow:0 2px 0.375rem rgba(0,0,0,.35), 0 1rem 2.5rem rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#EDF1F4; --muted:#9AA7B1; --line:#2A3238;
+  --ground:#14181C; --tint:#1A2126;
+  --teal:#2BB8D6; --teal-deep:#7FD9EA; --teal-soft:#0D2C34;
+  --red:#FF574C; --red-deep:#FF7A70;
+  --gold-soft:#2A2115; --gold:#E0AE5E;
+  --on-red:#1C0F0E; --card:#1A2126;
+  --hero-top:#0E2A31;
+  --shadow:0 2px 0.375rem rgba(0,0,0,.35), 0 1rem 2.5rem rgba(0,0,0,.4);
+}
+
+html{
+  /* 画面幅に合わせて全体を等比で拡大縮小する基準サイズ
+     1200px以上=16px（PCの基準デザイン）／狭い画面では自動で小さくなる */
+  font-size:clamp(13.5px, 1.3333vw, 16px);
+}
+@media (max-width:359px){ html{font-size:12.5px} }
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;
+  line-height:1.9;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;line-height:1.4;margin:0;letter-spacing:.02em}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.75rem}
+
+.draft{background:var(--gold-soft);color:var(--gold);font-size:0.75rem;letter-spacing:.08em;font-weight:700;text-align:center;padding:0.4375rem 1rem}
+
+.nav{position:sticky;top:0;z-index:40;background:var(--ground);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:1.625rem;height:3.625rem}
+.logo{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:1.3125rem;letter-spacing:.01em;white-space:nowrap;text-decoration:none}
+.logo em{font-style:normal;color:var(--teal)}
+.logo i{font-style:normal;color:var(--red)}
+.nav-back{margin-left:auto;font-size:0.8438rem;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif;text-decoration:none;color:var(--muted)}
+.nav-back:hover{color:var(--teal)}
+
+.head{background:linear-gradient(180deg,var(--hero-top) 0%,var(--teal-soft) 45%,var(--ground) 100%);padding:1.875rem 0 1.375rem;text-align:center}
+.eyebrow-en{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.75rem;letter-spacing:.22em;color:var(--teal);margin-bottom:0.375rem}
+.head h1{font-size:1.875rem;font-weight:900}
+.head p{color:var(--muted);font-size:0.8438rem;font-weight:500;margin-top:0.5rem}
+
+.main{padding:1.375rem 0 3.5rem}
+.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.625rem;align-items:start}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:1.125rem;box-shadow:var(--shadow)}
+.form-card{padding:1.5rem 1.625rem}
+
+.field{margin-bottom:0.8125rem}
+.frow{display:contents}
+.field label{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.8438rem;margin-bottom:0.25rem}
+.req{color:var(--red);font-size:0.6875rem;border:1px solid var(--red);border-radius:0.25rem;padding:1px 0.4375rem;margin-left:0.5rem;vertical-align:2px;font-weight:700}
+.opt{color:var(--muted);font-size:0.6875rem;border:1px solid var(--line);border-radius:0.25rem;padding:1px 0.4375rem;margin-left:0.5rem;vertical-align:2px;font-weight:700}
+.field input,.field select{
+  width:100%;background:var(--tint);border:1.5px solid var(--line);border-radius:0.625rem;
+  padding:0.625rem 0.875rem;font-size:0.9062rem;color:var(--ink);font-family:inherit;
+}
+.field input:focus,.field select:focus{outline:none;border-color:var(--teal);background:var(--ground)}
+.field input::placeholder{color:var(--muted);opacity:.7}
+.field select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 1.25rem) 50%, calc(100% - 0.875rem) 50%;background-size:0.375rem 0.375rem;background-repeat:no-repeat}
+.err{display:none;color:var(--red);font-size:0.7812rem;margin-top:0.3125rem;font-weight:700}
+.field.invalid input{border-color:var(--red)}
+.field.invalid .err{display:block}
+
+.agree-check{display:flex;justify-content:center;align-items:center;gap:0.5rem;margin:0.75rem 0 0.625rem;font-size:0.7812rem;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif;cursor:pointer;color:var(--ink)}
+.agree-check input{width:1rem;height:1rem;accent-color:var(--teal);cursor:pointer;flex-shrink:0}
+.agree-check a{color:var(--teal)}
+.agree-err{display:none;color:var(--red);font-size:0.75rem;font-weight:700;text-align:center;margin-bottom:0.5rem}
+.agree-err.show{display:block}
+
+.submit{
+  display:flex;align-items:center;justify-content:center;gap:0.625rem;width:100%;
+  background:var(--red);color:var(--on-red);border:0;border-radius:62.4375rem;cursor:pointer;
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:1rem;padding:0.8125rem 1.25rem;
+  transition:background .16s ease, transform .16s ease;
+}
+.submit:hover{background:var(--red-deep);transform:translateY(-2px)}
+.submit:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.submit[disabled]{opacity:.6;cursor:default;transform:none}
+.form-note{font-size:0.7188rem;color:var(--muted);text-align:center;margin-top:0.5rem}
+.form-privacy{text-align:center;margin-top:0.5rem;font-size:0.7188rem;color:var(--muted);font-weight:500}
+
+.done{display:none;text-align:center;padding:3rem 1.5rem}
+.done.show{display:block}
+.done .mark{width:4rem;height:4rem;border-radius:62.4375rem;background:var(--teal-soft);color:var(--teal);font-size:1.875rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-family:"Zen Kaku Gothic New",sans-serif}
+.done h2{font-size:1.375rem;font-weight:900;margin-bottom:0.625rem}
+.done p{font-size:0.9062rem;color:var(--muted)}
+
+.side{padding:1.625rem 1.625rem}
+.side-lbl{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.8125rem;letter-spacing:.14em;color:var(--teal);margin-bottom:0.875rem}
+.side-tel{display:block;text-decoration:none;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:2.25rem;letter-spacing:.02em;font-variant-numeric:tabular-nums;color:var(--ink);line-height:1.2}
+.side-tel:hover{color:var(--teal)}
+.side-note{font-size:0.8125rem;color:var(--muted);margin-top:0.625rem;font-weight:500}
+.side-divide{border-top:1px solid var(--line);margin:1.375rem 0 1rem}
+.side-point{display:flex;gap:0.625rem;align-items:flex-start;font-size:0.875rem;font-weight:700;margin-top:0.5625rem;font-family:"Zen Kaku Gothic New",sans-serif}
+.tick{color:var(--teal);font-weight:900;flex-shrink:0}
+
+footer{border-top:1px solid var(--line);padding:2.25rem 0 2rem}
+.foot-grid{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-start;justify-content:space-between}
+.foot-co{font-size:0.75rem;color:var(--muted);line-height:1.9}
+.foot-co b{display:block;font-size:0.8125rem;color:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;margin-bottom:2px}
+.foot-links{display:flex;gap:1.375rem;font-size:0.7812rem;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
+.foot-links a{color:var(--muted);text-decoration:none}
+.foot-links a:hover{color:var(--teal)}
+.copyright{font-size:0.7188rem;color:var(--muted);margin-top:1.5rem}
+
+
+/* ───── privacy modal ───── */
+.pp-overlay{
+  position:fixed;inset:0;z-index:100;display:none;
+  background:rgba(20,24,28,.55);
+  align-items:center;justify-content:center;padding:1.5rem;
+}
+.pp-overlay.open{display:flex}
+.pp-modal{
+  background:var(--ground);color:var(--ink);border-radius:1.125rem;
+  width:min(47.5rem,100%);max-height:86vh;display:flex;flex-direction:column;
+  box-shadow:0 1.5rem 4.375rem rgba(0,0,0,.35);overflow:hidden;
+}
+.pp-head{
+  display:flex;align-items:center;gap:1rem;
+  padding:1.25rem 1.5rem;border-bottom:1px solid var(--line);flex-shrink:0;
+}
+.pp-head h2{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:1.1875rem;margin:0}
+.pp-close{
+  margin-left:auto;background:var(--tint);border:1px solid var(--line);border-radius:62.4375rem;
+  width:2.125rem;height:2.125rem;font-size:1.0625rem;line-height:1;color:var(--muted);cursor:pointer;flex-shrink:0;
+}
+.pp-close:hover{color:var(--ink)}
+.pp-close:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.pp-body{padding:0.5rem 1.75rem 1.75rem;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.pp-body p,.pp-body li{font-size:0.875rem;color:var(--ink);line-height:1.9}
+.pp-body h3{
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:0.9688rem;
+  margin:1.625rem 0 0.5rem;padding-top:1.125rem;border-top:1px solid var(--line);
+}
+.pp-body h3:first-of-type{border-top:0;padding-top:0.5rem;margin-top:0.75rem}
+.pp-body ul{padding-left:1.25rem;margin:0.375rem 0}
+.pp-updated{font-size:0.75rem;color:var(--muted);margin-top:0.875rem}
+.pp-box{background:var(--tint);border-radius:0.625rem;padding:1rem 1.125rem;font-size:0.8438rem;margin-top:0.5rem;line-height:1.9}
+@media (max-width:640px){
+  .pp-overlay{padding:0}
+  .pp-modal{border-radius:0;max-height:100vh;height:100%;width:100%}
+  .pp-body{padding:0.5rem 1.25rem 1.75rem}
+}
+
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:560px){
+  /* 極端に狭い画面だけフォームと電話を縦に */
+  .grid{grid-template-columns:1fr;gap:1.25rem}
+}
+/* iOSで入力時に画面が勝手に拡大するのを防ぐ（タッチ端末のみ） */
+@media (hover:none){
+  .field input,.field select{font-size:16px}
+}
+
+
+/* ───── 狭い画面向けの調整（最後に適用） ───── */
+@media (max-width:640px){
+  .logo{font-size:1.15rem}
+  .head h1{font-size:1.35rem}
+  .side-tel{font-size:1.6rem}
+  .done .mark{width:3.2rem;height:3.2rem;font-size:1.5rem}
+  .done h2{font-size:1.2rem}
+}
+</style>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="/">スーパー<em>人事</em>くん</a>
+    <a class="nav-back" href="/">← トップページへ戻る</a>
+  </div>
+</header>
+
+<div class="head">
+  <div class="wrap">
+    <div class="eyebrow-en">CONTACT</div>
+    <h1>お問い合わせ・資料請求</h1>
+    <p>1営業日以内に担当よりご連絡いたします。お急ぎの方はお電話でも受け付けています。</p>
+  </div>
+</div>
+
+<div class="main">
+  <div class="wrap grid">
+
+    <div class="card form-card">
+      <form id="contactForm" novalidate>
+        <div class="frow">
+          <div class="field" data-name="company">
+            <label for="f-company">会社名<span class="req">必須</span></label>
+            <input id="f-company" type="text" autocomplete="organization" placeholder="株式会社〇〇">
+            <p class="err">会社名を入力してください</p>
+          </div>
+          <div class="field" data-name="name">
+            <label for="f-name">お名前<span class="req">必須</span></label>
+            <input id="f-name" type="text" autocomplete="name" placeholder="山田 太郎">
+            <p class="err">お名前を入力してください</p>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="field" data-name="tel">
+            <label for="f-tel">電話番号<span class="req">必須</span></label>
+            <input id="f-tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="090-1234-5678">
+            <p class="err">電話番号を入力してください</p>
+          </div>
+          <div class="field" data-name="email">
+            <label for="f-email">メールアドレス<span class="req">必須</span></label>
+            <input id="f-email" type="email" autocomplete="email" inputmode="email" placeholder="example@company.co.jp">
+            <p class="err">メールアドレスを入力してください</p>
+          </div>
+        </div>
+        <div class="field" data-name="topic">
+          <label for="f-topic">お問い合わせ内容<span class="opt">任意</span></label>
+          <select id="f-topic">
+            <option value="">選択してください</option>
+            <option>サービスについて</option>
+            <option>料金について</option>
+            <option>スケジュールについて</option>
+          </select>
+        </div>
+
+        <label class="agree-check"><input type="checkbox" id="f-agree"><span>個人情報の取扱い（<a href="#" data-privacy>プライバシーポリシー</a>）について同意する</span></label>
+        <p class="agree-err" id="agreeErr">送信には同意が必要です</p>
+        <button class="submit" type="submit">送信する</button>
+        <p class="form-privacy">いただいた情報は、最適なご提案及び情報提供のために利用いたします。</p>
+      </form>
+
+      <div class="done" id="doneBox">
+        <div class="mark">✓</div>
+        <h2>送信ありがとうございました。</h2>
+        <p>1営業日以内に担当よりご連絡いたします。<br>お急ぎの場合は 0120-058-053（通話無料）までお電話ください。</p>
+      </div>
+    </div>
+
+    <div class="card side">
+      <div class="side-lbl">お電話でのご相談</div>
+      <a class="side-tel" href="tel:0120058053">0120-058-053</a>
+      <p class="side-note">フリーダイヤル・通話無料。</p>
+      <div class="side-divide"></div>
+      <div class="side-point"><span class="tick">✓</span><span>ご相談は無料です</span></div>
+      <div class="side-point"><span class="tick">✓</span><span>お急ぎの募集もまずはご相談ください</span></div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-co">
+        <b>スーパー人事くん</b>
+        運営: スパイラル産業株式会社（代表取締役 荒武 大翔）<br>
+        〒880-0805 宮崎県宮崎市橘通東3丁目1-7 プラムビル5F　TEL: 0120-058-053
+      </div>
+      <nav class="foot-links">
+        <a href="#" data-privacy>プライバシーポリシー</a>
+        <a href="https://www.spiral-sangyo.com/" target="_blank" rel="noopener">運営会社</a>
+      </nav>
+    </div>
+    <p class="copyright">© スパイラル産業株式会社</p>
+  </div>
+</footer>
+
+<div class="pp-overlay" id="ppOverlay" role="dialog" aria-modal="true" aria-labelledby="ppTitle">
+  <div class="pp-modal">
+    <div class="pp-head">
+      <h2 id="ppTitle">プライバシーポリシー</h2>
+      <button class="pp-close" id="ppClose" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="pp-body">
+      <p class="pp-updated">制定日: 2026年8月21日</p>
+      <p style="margin-top:12px">スパイラル産業株式会社（以下「当社」といいます）は、採用運用代行サービス「スーパー人事くん」（以下「本サービス」といいます）の提供にあたり、お客様の個人情報を以下の方針に基づいて取り扱います。</p>
+
+      <h3>1. 取得する情報</h3>
+      <p>当社は、本サービスのウェブサイトを通じて、次の情報を取得します。</p>
+      <ul>
+        <li>お問い合わせフォームにご入力いただく情報（会社名、お名前、電話番号、メールアドレス、お問い合わせ内容）</li>
+        <li>ウェブサイトの利用状況に関する情報（アクセス解析ツールによる閲覧履歴等。個人を特定するものではありません）</li>
+      </ul>
+
+      <h3>2. 利用目的</h3>
+      <p>取得した個人情報は、次の目的で利用します。</p>
+      <ul>
+        <li>お問い合わせ・無料相談へのご回答、日程のご連絡</li>
+        <li>本サービスに関するご案内・資料の送付</li>
+        <li>本サービスの品質向上・改善のための分析</li>
+      </ul>
+
+      <h3>3. 第三者への提供</h3>
+      <p>当社は、法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供しません。</p>
+
+      <h3>4. 外部サービスの利用</h3>
+      <p>お問い合わせフォームの運用には Google LLC の提供する Google フォームを利用しています。入力された情報は Google のサーバーに保存され、Google のプライバシーポリシーが適用されます。</p>
+
+      <h3>5. 安全管理</h3>
+      <p>当社は、個人情報への不正アクセス、紛失、漏えい等を防止するため、必要かつ適切な安全管理措置を講じます。</p>
+
+      <h3>6. 開示・訂正・削除のご請求</h3>
+      <p>ご本人からの個人情報の開示・訂正・利用停止・削除のご請求には、ご本人であることを確認のうえ、速やかに対応します。下記の窓口までご連絡ください。</p>
+      <div class="pp-box">
+        スパイラル産業株式会社<br>
+        〒880-0805　宮崎県宮崎市橘通東3丁目1-7　プラムビル5F<br>
+        電話: 0120-058-053（フリーダイヤル・通話無料）
+      </div>
+
+      <h3>7. 本ポリシーの改定</h3>
+      <p>本ポリシーの内容は、法令の改正やサービス内容の変更に応じて、予告なく改定することがあります。改定後の内容は本ページに掲載した時点から適用されます。</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var ov = document.getElementById("ppOverlay");
+  var closeBtn = document.getElementById("ppClose");
+  var lastFocus = null;
+  function open(){ lastFocus = document.activeElement; ov.classList.add("open"); document.body.style.overflow="hidden"; closeBtn.focus(); }
+  function close(){ ov.classList.remove("open"); document.body.style.overflow=""; if(lastFocus && lastFocus.focus){ lastFocus.focus(); } }
+  document.addEventListener("click", function(ev){
+    var a = ev.target.closest ? ev.target.closest("[data-privacy]") : null;
+    if(a){ ev.preventDefault(); open(); return; }
+    if(ev.target === ov){ close(); }
+  }, true);
+  closeBtn.addEventListener("click", close);
+  document.addEventListener("keydown", function(ev){ if(ev.key === "Escape" && ov.classList.contains("open")){ close(); } });
+})();
+</script>
+
+
+<script>
+(function(){
+  var FORM_BASE = "https://docs.google.com/forms/d/e/1FAIpQLSdrdKMBzTIMgcNJqTVCXtTbip9q8kM6GB4xHtGpeB12Cwokxg";
+  var ENTRIES = { company:"entry.5897473", name:"entry.135402392", tel:"entry.1272752298", email:"entry.1174888829", topic:"entry.503946780" };
+  var form = document.getElementById("contactForm");
+  var doneBox = document.getElementById("doneBox");
+  var agree = document.getElementById("f-agree");
+  var agreeErr = document.getElementById("agreeErr");
+  var submitBtn = form.querySelector(".submit");
+  submitBtn.disabled = true;
+  agree.addEventListener("change", function(){
+    submitBtn.disabled = !agree.checked;
+    if(agree.checked){ agreeErr.classList.remove("show"); }
+  });
+
+  function val(id){ return document.getElementById(id).value.trim(); }
+
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var values = { company:val("f-company"), name:val("f-name"), tel:val("f-tel"), email:val("f-email"), topic:val("f-topic") };
+    var ok = true;
+    ["company","name","tel","email"].forEach(function(k){
+      var fld = form.querySelector('[data-name="'+k+'"]');
+      if(!values[k]){ fld.classList.add("invalid"); ok = false; }
+      else{ fld.classList.remove("invalid"); }
+    });
+    if(!agree.checked){ agreeErr.classList.add("show"); ok = false; }
+    if(!ok){ return; }
+
+    var btn = form.querySelector(".submit");
+    btn.disabled = true; btn.textContent = "送信中…";
+
+    var params = new URLSearchParams();
+    Object.keys(ENTRIES).forEach(function(k){ if(values[k]) params.append(ENTRIES[k], values[k]); });
+
+    fetch(FORM_BASE + "/formResponse", { method:"POST", mode:"no-cors", body:params })
+      .then(function(){ form.style.display="none"; doneBox.classList.add("show"); })
+      .catch(function(){
+        var pre = new URLSearchParams();
+        pre.append("usp","pp_url");
+        Object.keys(ENTRIES).forEach(function(k){ if(values[k]) pre.append(ENTRIES[k], values[k]); });
+        window.open(FORM_BASE + "/viewform?" + pre.toString(), "_blank", "noopener");
+        btn.disabled = !agree.checked; btn.textContent = "送信する";
+      });
+  });
+})();
+</script>

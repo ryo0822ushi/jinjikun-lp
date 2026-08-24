@@ -1,0 +1,874 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スーパー人事くん｜月10万円で採用し放題の定額制・採用代行</title>
+<meta name="description" content="月10万円で採用し放題。貴社の対応は最終面接だけ。求人票の作成から応募者対応・1次スクリーニングまで丸ごと代行する定額制の採用代行サービスです。初期費用・成果報酬・広告費0円。">
+<link rel="canonical" href="https://jinjikun.com/">
+<meta property="og:title" content="スーパー人事くん｜月10万円で採用し放題の定額制・採用代行">
+<meta property="og:description" content="貴社の対応は最終面接だけ。採用の実務をまるごと代行する定額制サービス。">
+<meta property="og:url" content="https://jinjikun.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%2300A3C4%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2736%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27 font-weight=%27bold%27%3E人%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --ink:#14181C;
+  --muted:#5F6B76;
+  --line:#E5E9EC;
+  --ground:#FFFFFF;
+  --tint:#F4F8FA;
+  --teal:#00A3C4;
+  --teal-deep:#007A94;
+  --teal-soft:#E0F4F9;
+  --red:#FF4438;
+  --red-deep:#E03A2F;
+  --gold-soft:#FBF2E2;
+  --gold:#C98A2E;
+  --on-teal:#FFFFFF;
+  --on-red:#FFFFFF;
+  --card:#FFFFFF;
+  --hero-top:#CFEDF6;
+  --shadow:0 2px 0.375rem rgba(20,24,28,.06), 0 1rem 2.5rem rgba(20,24,28,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#EDF1F4;
+    --muted:#9AA7B1;
+    --line:#2A3238;
+    --ground:#14181C;
+    --tint:#1A2126;
+    --teal:#2BB8D6;
+    --teal-deep:#7FD9EA;
+    --teal-soft:#0D2C34;
+    --red:#FF574C;
+    --red-deep:#FF7A70;
+    --gold-soft:#2A2115;
+    --gold:#E0AE5E;
+    --on-teal:#0B1C21;
+    --on-red:#1C0F0E;
+    --card:#1A2126;
+    --hero-top:#103440;
+    --shadow:0 2px 0.375rem rgba(0,0,0,.35), 0 1rem 2.5rem rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#EDF1F4;
+  --muted:#9AA7B1;
+  --line:#2A3238;
+  --ground:#14181C;
+  --tint:#1A2126;
+  --teal:#2BB8D6;
+  --teal-deep:#7FD9EA;
+  --teal-soft:#0D2C34;
+  --red:#FF574C;
+  --red-deep:#FF7A70;
+  --gold-soft:#2A2115;
+  --gold:#E0AE5E;
+  --on-teal:#0B1C21;
+  --on-red:#1C0F0E;
+  --card:#1A2126;
+  --hero-top:#103440;
+  --shadow:0 2px 0.375rem rgba(0,0,0,.35), 0 1rem 2.5rem rgba(0,0,0,.4);
+}
+
+html{
+  /* 画面幅に合わせて全体を等比で拡大縮小する基準サイズ
+     1200px以上=16px（PCの基準デザイン）／狭い画面では自動で小さくなる */
+  font-size:clamp(13.5px, 1.3333vw, 16px);
+}
+@media (max-width:359px){ html{font-size:12.5px} }
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;
+  font-weight:400;line-height:1.9;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;line-height:1.4;margin:0;letter-spacing:.02em}
+p{margin:0}
+a{color:inherit}
+.nb{display:inline-block}
+img{max-width:100%}
+
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.75rem}
+.narrow{max-width:51.25rem;margin:0 auto}
+
+/* draft ribbon */
+.draft{
+  background:var(--gold-soft);color:var(--gold);
+  font-size:0.75rem;letter-spacing:.08em;font-weight:700;
+  text-align:center;padding:0.4375rem 1rem;
+}
+
+/* ───── header ───── */
+.nav{position:sticky;top:0;z-index:40;background:var(--ground);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:1.625rem;height:4.5rem}
+.logo{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:1.3125rem;letter-spacing:.01em;white-space:nowrap}
+.logo em{font-style:normal;color:var(--teal)}
+.logo i{font-style:normal;color:var(--red)}
+.nav-links{display:flex;gap:1.375rem;font-size:0.8438rem;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
+.nav-links a{text-decoration:none;color:var(--ink)}
+.nav-links a:hover{color:var(--teal)}
+.nav-cta{margin-left:auto;display:flex;gap:0.625rem;align-items:center}
+.nav-cta .pill{font-size:0.8125rem;padding:0.5625rem 0.375rem 0.5625rem 1.1875rem}
+.nav-cta .pill .dot{width:1.5625rem;height:1.5625rem;font-size:0.75rem}
+.nav-tel{font-size:0.75rem;color:var(--muted);text-align:right;line-height:1.5;white-space:nowrap}
+.nav-tel b{display:block;font-size:1rem;color:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+
+/* ───── pill buttons ───── */
+.pill{
+  display:inline-flex;align-items:center;gap:0.625rem;
+  text-decoration:none;border-radius:62.4375rem;
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:0.9062rem;
+  padding:0.75rem 0.5rem 0.75rem 1.5rem;white-space:nowrap;
+  transition:transform .16s ease, background .16s ease, opacity .16s ease;
+}
+.pill:hover{transform:translateY(-2px)}
+.pill:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.pill .dot{
+  width:1.875rem;height:1.875rem;border-radius:62.4375rem;display:inline-flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.pill .dot svg{width:52%;height:52%;display:block}
+.pill-red{background:var(--red);color:var(--on-red)}
+.pill-red:hover{background:var(--red-deep)}
+.pill-red .dot{background:rgba(255,255,255,.22)}
+.pill-teal{background:var(--teal);color:var(--on-teal)}
+.pill-teal:hover{background:var(--teal-deep)}
+.pill-teal .dot{background:rgba(255,255,255,.24)}
+.pill-ink{background:var(--ink);color:var(--ground)}
+.pill-ink .dot{background:rgba(255,255,255,.2)}
+.pill-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding-right:1.5rem}
+.pill-lg{font-size:1.0625rem;padding:1rem 0.625rem 1rem 1.875rem}
+.pill-lg .dot{width:2.25rem;height:2.25rem}
+
+/* ───── hero ───── */
+.hero{
+  padding:6rem 0 4.5rem;text-align:center;position:relative;overflow:hidden;
+  background:linear-gradient(180deg, var(--hero-top) 0%, var(--teal-soft) 46%, var(--ground) 100%);
+}
+.hero-eyebrow{
+  display:inline-block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:0.875rem;
+  color:var(--teal);letter-spacing:.14em;margin-bottom:1.125rem;
+}
+.hero h1{font-size:3.8rem;font-weight:900;letter-spacing:.01em}
+.hero h1 .brand{white-space:nowrap;letter-spacing:-.02em}
+.hero h1 .accent{color:var(--teal)}
+.hero-lead{
+  margin:1.375rem auto 0;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;
+  font-size:1.75rem;letter-spacing:.02em;color:var(--ink);
+}
+.hero-lead .mark{color:var(--teal-deep);border-bottom:3px solid var(--teal);padding-bottom:2px}
+.hero-sub{margin:1rem auto 0;font-size:1.125rem;color:var(--muted);font-weight:500}
+.hero-cta{display:flex;justify-content:center;flex-wrap:wrap;gap:0.875rem;margin-top:2.375rem;position:relative}
+.hero-note{font-size:0.8125rem;color:var(--muted);margin-top:1.125rem;position:relative}
+
+/* ───── badge marquee ───── */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.125rem 0;overflow:hidden}
+.marquee-track{display:flex;gap:0.875rem;width:max-content;animation:mq var(--mq-dur,28s) linear infinite}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mbadge{
+  display:inline-flex;align-items:center;gap:0.5rem;white-space:nowrap;
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:0.875rem;
+  border:1.5px solid var(--line);border-radius:62.4375rem;padding:0.5rem 1.125rem;color:var(--muted);
+}
+.mbadge b{color:var(--teal);font-weight:900}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+
+/* ───── section machinery ───── */
+section{padding:6.25rem 0}
+.sec-tint{background:var(--tint)}
+.lead-in{
+  text-align:center;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;
+  font-size:1.625rem;letter-spacing:.03em;
+}
+.lead-in .accent{color:var(--teal)}
+.chev{width:12.5rem;margin:0.875rem auto 2.125rem;position:relative;height:0.875rem}
+.chev::before{content:"";position:absolute;left:0;right:0;top:0;border-top:2px solid var(--teal)}
+.chev::after{
+  content:"";position:absolute;left:50%;top:0;width:0.75rem;height:0.75rem;
+  border-right:2px solid var(--teal);border-bottom:2px solid var(--teal);
+  transform:translateX(-50%) rotate(45deg);background:var(--ground);margin-top:-0.375rem;
+}
+.sec-tint .chev::after{background:var(--tint)}
+.big-state{
+  text-align:center;font-size:2.875rem;font-weight:900;letter-spacing:.02em;
+}
+.eyebrow-en{
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.8125rem;
+  letter-spacing:.22em;color:var(--teal);margin-bottom:0.875rem;
+}
+.sec-sub{color:var(--muted);font-size:0.9688rem;margin:1.375rem auto 0;text-align:center;font-weight:500}
+
+/* ───── problems ───── */
+.bubbles{display:grid;grid-template-columns:repeat(2,1fr);gap:1.125rem;margin:3.25rem auto 0;max-width:56.25rem}
+.bubble{
+  position:relative;background:var(--card);border:1.5px solid var(--line);border-radius:1rem;
+  padding:1.375rem 1.625rem;font-weight:700;font-size:0.9688rem;font-family:"Zen Kaku Gothic New",sans-serif;
+  box-shadow:var(--shadow);
+}
+.bubble::after{
+  content:"";position:absolute;left:2.125rem;bottom:-0.5625rem;width:1rem;height:1rem;
+  background:var(--card);border-right:1.5px solid var(--line);border-bottom:1.5px solid var(--line);
+  transform:rotate(45deg);
+}
+.bubble small{display:block;font-family:"Noto Sans JP",sans-serif;font-weight:400;font-size:0.8125rem;color:var(--muted);margin-top:0.375rem}
+.turn{
+  margin:3.5rem auto 0;text-align:center;white-space:nowrap;
+  /* 1行に収まる最大サイズ（画面幅に連動） */
+  font-size:min(1.375rem, 2.2vw);
+  font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif;
+}
+.turn b{color:var(--red)}
+
+/* ───── scope ───── */
+.ribbon{
+  display:inline-block;position:relative;font-family:"Zen Kaku Gothic New",sans-serif;
+  font-weight:900;font-size:1rem;letter-spacing:.06em;
+  padding:0.625rem 2.75rem 0.625rem 1.625rem;margin-bottom:1.25rem;
+  clip-path:polygon(0 0, calc(100% - 1.125rem) 0, 100% 50%, calc(100% - 1.125rem) 100%, 0 100%);
+}
+.ribbon-teal{background:var(--teal-soft);color:var(--teal-deep)}
+.ribbon-gold{background:var(--gold-soft);color:var(--gold)}
+.scope{display:grid;grid-template-columns:1.6fr 1fr;gap:1.5rem;margin-top:3rem;align-items:stretch}
+.scope-card{background:var(--card);border:1.5px solid var(--line);border-radius:1.125rem;padding:1.875rem 1.875rem 2.125rem;box-shadow:var(--shadow)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem}
+.svc-item{
+  background:var(--tint);border-radius:0.75rem;padding:1.125rem 0.625rem 1rem;text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:0.625rem;
+}
+.svc-item svg{width:1.625rem;height:1.625rem;color:var(--teal);flex-shrink:0}
+.svc-item span{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:0.7812rem;line-height:1.5}
+.scope-note{font-size:0.8125rem;color:var(--muted);margin-top:1rem}
+.scope-you{display:flex;flex-direction:column;justify-content:center;text-align:center}
+.scope-you strong{font-family:"Zen Kaku Gothic New",sans-serif;font-size:2.125rem;font-weight:900;color:var(--ink)}
+
+/* ───── points ───── */
+.point{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;padding:4.5rem 0}
+.point + .point{border-top:1px solid var(--line)}
+.point:nth-child(even) .point-copy{order:2}
+.point-eyebrow{
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.875rem;
+  letter-spacing:.22em;color:var(--teal);margin-bottom:0.875rem;
+}
+.point h3{font-size:2rem;font-weight:900;margin-bottom:1.125rem}
+.point p{font-size:0.9375rem;color:var(--muted);font-weight:500}
+.mock{position:relative;background:var(--tint);border-radius:1.25rem;padding:2.75rem 2.25rem;min-height:18.75rem;display:flex;align-items:center;justify-content:center}
+.mock-card{background:var(--card);border:1.5px solid var(--line);border-radius:0.875rem;box-shadow:var(--shadow);padding:1.5rem 1.625rem;width:100%;max-width:23.75rem}
+.mock-tag{
+  position:absolute;top:1.375rem;right:1.375rem;background:var(--ink);color:var(--ground);
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:0.8125rem;
+  border-radius:0.375rem;padding:0.4375rem 0.875rem;box-shadow:var(--shadow);
+}
+.mock-row{display:flex;justify-content:space-between;align-items:center;padding:0.6875rem 0;border-bottom:1px solid var(--line);font-size:0.9062rem;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
+.mock-row:last-child{border-bottom:0}
+.mock-row .ok{color:var(--teal);font-size:0.7812rem;background:var(--teal-soft);border-radius:62.4375rem;padding:3px 0.75rem}
+.mock-row .you{color:var(--red);font-size:0.7812rem;background:var(--gold-soft);border-radius:62.4375rem;padding:3px 0.75rem}
+.mock-zero{display:flex;align-items:baseline;justify-content:center;gap:0.375rem;padding:0.5rem 0 2px}
+.mock-zero b{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:3.625rem;color:var(--teal);line-height:1;font-variant-numeric:tabular-nums}
+.mock-zero i{font-style:normal;font-weight:700;font-size:1rem}
+.mock-cap{text-align:center;font-size:0.8125rem;color:var(--muted);margin-top:0.5rem}
+
+/* ───── teal band ───── */
+.band{background:var(--teal);color:var(--on-teal);padding:5.5rem 0;text-align:center}
+.band h2{font-size:2.5rem;font-weight:900;margin-bottom:0.875rem}
+.band p{opacity:.92;font-size:0.9688rem;font-weight:500;margin-bottom:2.125rem}
+.band .pill-ink{background:var(--ink);color:#FFFFFF}
+.band .pill-white{background:var(--ground);color:var(--ink)}
+.band .pill-white .dot{background:var(--teal-soft);color:var(--teal-deep)}
+.band-cta{display:flex;justify-content:center;flex-wrap:wrap;gap:0.875rem}
+
+/* ───── results ───── */
+.res{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3.25rem}
+.rcard{
+  text-align:center;background:var(--card);border:1.5px solid var(--line);border-radius:1.125rem;
+  padding:2.125rem 0.75rem 1.875rem;box-shadow:var(--shadow);
+}
+.rjob{font-family:"Zen Kaku Gothic New",sans-serif;font-size:0.9375rem;font-weight:700;color:var(--muted);margin-bottom:0.625rem}
+.rnum{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:var(--teal);font-size:3.625rem;line-height:1;font-variant-numeric:tabular-nums}
+.rnum small{font-size:1.125rem;margin-left:3px}
+.rlbl{font-size:0.8125rem;color:var(--muted);margin-top:0.625rem}
+.note{font-size:0.7812rem;color:var(--muted);margin-top:1.375rem;text-align:center}
+
+/* ───── plan ───── */
+.plan-rows{margin-top:3rem;border-top:1.5px solid var(--ink)}
+.plan-row{display:grid;grid-template-columns:16.25rem 1fr;gap:1.5rem;padding:1.625rem 0.5rem;border-bottom:1px solid var(--line);align-items:baseline}
+.plan-row dt{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:1rem;margin:0}
+.plan-row dd{margin:0;font-size:0.9375rem;font-weight:500}
+.plan-row dd b{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:1.875rem;color:var(--teal);font-variant-numeric:tabular-nums}
+.plan-row dd small{display:block;color:var(--muted);font-size:0.8125rem;margin-top:0.375rem}
+.plan-badges{display:flex;flex-wrap:wrap;gap:0.625rem;margin-top:1.875rem;justify-content:center}
+.pbadge{background:var(--teal-soft);color:var(--teal-deep);font-size:0.8125rem;font-weight:700;padding:0.5rem 1.125rem;border-radius:62.4375rem;font-family:"Zen Kaku Gothic New",sans-serif}
+
+/* ───── flow ───── */
+.tl{margin-top:3.25rem;display:grid;gap:0;max-width:51.25rem;margin-left:auto;margin-right:auto}
+.tl-row{display:grid;grid-template-columns:4.5rem 1fr;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.tl-row:last-child{border-bottom:0}
+.tl-n{
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.875rem;
+  color:var(--on-teal);background:var(--teal);border-radius:62.4375rem;
+  height:2.5rem;display:flex;align-items:center;justify-content:center;letter-spacing:.06em;
+}
+.tl-row h3{font-size:1.0938rem;font-weight:900;margin-bottom:0.25rem}
+.tl-row p{font-size:0.9062rem;color:var(--muted);font-weight:500}
+
+/* ───── faq ───── */
+.faq{margin:3rem auto 0;display:grid;gap:0.75rem;max-width:51.25rem}
+details{background:var(--card);border:1.5px solid var(--line);border-radius:0.875rem;overflow:hidden}
+summary{
+  cursor:pointer;list-style:none;padding:1.25rem 1.625rem;font-weight:900;font-size:0.9688rem;
+  font-family:"Zen Kaku Gothic New",sans-serif;display:flex;gap:0.875rem;align-items:flex-start;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q";color:var(--teal);font-weight:900;flex-shrink:0}
+summary:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}
+details[open] summary{border-bottom:1px solid var(--line)}
+.faq-a{padding:1.125rem 1.625rem 1.375rem 3.625rem;font-size:0.9062rem;color:var(--muted);font-weight:500}
+
+/* ───── contact ───── */
+.contact{background:var(--tint);padding:6.25rem 0;text-align:center}
+.contact-cta{display:flex;justify-content:center;flex-wrap:wrap;gap:0.875rem;margin-top:2.5rem}
+.contact-tel{margin-top:2.75rem}
+.contact-tel .lbl{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.8125rem;letter-spacing:.14em;color:var(--teal)}
+.contact-tel a{
+  display:inline-block;text-decoration:none;margin-top:0.375rem;color:var(--ink);
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:2.875rem;
+  letter-spacing:.02em;line-height:1.2;font-variant-numeric:tabular-nums;
+}
+.contact-tel a:hover{color:var(--teal)}
+.contact-tel a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.contact-tel .note{font-size:0.8125rem;color:var(--muted);margin-top:0.5rem;font-weight:500}
+.tick{color:var(--teal);font-weight:900;flex-shrink:0}
+
+/* ───── footer ───── */
+footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
+.foot-grid{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-start;justify-content:space-between}
+.foot-co{font-size:0.75rem;color:var(--muted);line-height:1.9}
+.foot-co b{display:block;font-size:0.8125rem;color:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;margin-bottom:2px}
+.foot-links{display:flex;gap:1.375rem;font-size:0.7812rem;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
+.foot-links a{color:var(--muted);text-decoration:none}
+.foot-links a:hover{color:var(--teal)}
+.copyright{font-size:0.7188rem;color:var(--muted);margin-top:1.75rem}
+
+
+/* ───── privacy modal ───── */
+.pp-overlay{
+  position:fixed;inset:0;z-index:100;display:none;
+  background:rgba(20,24,28,.55);
+  align-items:center;justify-content:center;padding:1.5rem;
+}
+.pp-overlay.open{display:flex}
+.pp-modal{
+  background:var(--ground);color:var(--ink);border-radius:1.125rem;
+  width:min(47.5rem,100%);max-height:86vh;display:flex;flex-direction:column;
+  box-shadow:0 1.5rem 4.375rem rgba(0,0,0,.35);overflow:hidden;
+}
+.pp-head{
+  display:flex;align-items:center;gap:1rem;
+  padding:1.25rem 1.5rem;border-bottom:1px solid var(--line);flex-shrink:0;
+}
+.pp-head h2{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:1.1875rem;margin:0}
+.pp-close{
+  margin-left:auto;background:var(--tint);border:1px solid var(--line);border-radius:62.4375rem;
+  width:2.125rem;height:2.125rem;font-size:1.0625rem;line-height:1;color:var(--muted);cursor:pointer;flex-shrink:0;
+}
+.pp-close:hover{color:var(--ink)}
+.pp-close:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.pp-body{padding:0.5rem 1.75rem 1.75rem;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.pp-body p,.pp-body li{font-size:0.875rem;color:var(--ink);line-height:1.9}
+.pp-body h3{
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;font-size:0.9688rem;
+  margin:1.625rem 0 0.5rem;padding-top:1.125rem;border-top:1px solid var(--line);
+}
+.pp-body h3:first-of-type{border-top:0;padding-top:0.5rem;margin-top:0.75rem}
+.pp-body ul{padding-left:1.25rem;margin:0.375rem 0}
+.pp-updated{font-size:0.75rem;color:var(--muted);margin-top:0.875rem}
+.pp-box{background:var(--tint);border-radius:0.625rem;padding:1rem 1.125rem;font-size:0.8438rem;margin-top:0.5rem;line-height:1.9}
+@media (max-width:640px){
+  .pp-overlay{padding:0}
+  .pp-modal{border-radius:0;max-height:100vh;height:100%;width:100%}
+  .pp-body{padding:0.5rem 1.25rem 1.75rem}
+}
+
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+@media (max-width:560px){
+  /* 極端に狭い画面だけ、横並びが潰れる箇所を縦に */
+  .bubbles{grid-template-columns:1fr}
+  .bubble::after{display:none}
+  .scope{grid-template-columns:1fr}
+  .point{grid-template-columns:1fr;gap:2rem;padding:3.5rem 0}
+  .point:nth-child(even) .point-copy{order:0}
+  .plan-row{grid-template-columns:1fr;gap:0.375rem}
+}
+
+
+/* ───── 狭い画面向けの調整（最後に適用） ───── */
+/* 狭い画面では見出しの倍率だけ抑える（本文の読みやすさは保つ） */
+@media (max-width:640px){
+  .logo{font-size:1.15rem}
+  .nav-cta .pill{font-size:0.75rem;padding:0.5rem 0.3rem 0.5rem 0.9rem}
+  .nav-cta .pill .dot{width:1.35rem;height:1.35rem;font-size:0.7rem}
+  .hero{padding:3rem 0 2.6rem}
+  .hero h1{font-size:2.7rem;line-height:1.35}
+  .hero-eyebrow{font-size:0.78rem;margin-bottom:0.7rem}
+  .hero-lead{font-size:1.25rem;margin-top:1rem}
+  .hero-lead .mark{border-bottom-width:2px}
+  .hero-sub{font-size:1rem;line-height:1.8}
+  .hero-cta{margin-top:1.6rem}
+  .hero-note{font-size:0.72rem;margin-top:0.9rem}
+  section{padding:3.75rem 0}
+  .lead-in{font-size:1.15rem}
+  .chev{width:8.5rem;margin:0.7rem auto 1.6rem}
+  .big-state{font-size:1.9rem}
+  .eyebrow-en{font-size:0.72rem;margin-bottom:0.6rem}
+  .sec-sub{font-size:0.95rem;line-height:1.8;margin-top:1rem}
+  .bubble{padding:1.1rem 1.3rem;font-size:0.95rem}
+  .turn{margin-top:2.4rem}
+  .point-eyebrow{font-size:0.72rem}
+  .mock{min-height:0;padding:2.2rem 1.4rem}
+  .mock-tag{font-size:0.72rem;top:0.9rem;right:0.9rem}
+  .tl-row{grid-template-columns:3.2rem 1fr;gap:1rem}
+  .tl-n{height:2.1rem;font-size:0.75rem}
+  .tl-row h3{font-size:1rem}
+  .tl-row p{font-size:0.88rem}
+  summary{font-size:0.95rem;padding:1.05rem 1.2rem}
+  .faq-a{font-size:0.9rem;padding:1rem 1.2rem 1.2rem 2.6rem}
+  .band{padding:3.5rem 0}
+  .band h2{font-size:1.66rem}
+  .scope-you strong{font-size:1.5rem}
+  .point h3{font-size:1.4rem}
+  .point p{font-size:0.95rem}
+  .rnum{font-size:2.4rem}
+  .plan-row dd b{font-size:1.33rem}
+  .contact-tel a{font-size:2rem}
+  .mock-zero b{font-size:2.4rem}
+  .nav .wrap{flex-wrap:wrap;height:auto;padding-top:0.7rem;padding-bottom:0.7rem;gap:0.6rem;justify-content:center}
+  .logo{width:100%;text-align:center}
+  .nav-cta{margin-left:0;width:100%;justify-content:center}
+  /* 実績カード：職種名が2行になって数字がずれるのを防ぐ */
+  .rcard{padding:1.5rem 0.4rem 1.25rem}
+  .rjob{font-size:0.8rem;line-height:1.5;min-height:1.5em;margin-bottom:0.5rem}
+  .rlbl{font-size:0.72rem;line-height:1.5}
+}
+
+</style>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="logo">スーパー<em>人事</em>くん</div>
+    <div class="nav-cta">
+      <a class="pill pill-ink" href="/contact.html">資料ダウンロード<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
+      <a class="pill pill-red" href="/contact.html">お問い合わせ<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="hero-eyebrow">採用まるごと代行サービス</span>
+    <h1>月10万円で、<span class="accent">採用し放題。</span><br><span class="brand">スーパー人事くん</span></h1>
+    <p class="hero-lead">対応は、<span class="mark">最終面接だけ。</span></p>
+    <p class="hero-sub"><span class="nb">求人票づくりから</span><span class="nb">応募者への一次対応、</span><span class="nb">日程調整、</span><span class="nb">1次スクリーニングまで。</span><br class="pc"><span class="nb">採用の実務をまるごと代行する</span><span class="nb">定額制サービスです。</span></p>
+    <div class="hero-cta">
+      <a class="pill pill-red pill-lg" href="/contact.html">無料相談する<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
+      <a class="pill pill-ink pill-lg" href="/contact.html">資料ダウンロード<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
+    </div>
+    <p class="hero-note">初期費用0円／成果報酬0円／契約は月単位。ご相談は無料です。</p>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mqTrack">
+    <span class="mbadge">月額<b>10万円〜</b>の定額制</span>
+    <span class="mbadge">面接・採用人数<b>上限なし</b></span>
+    <span class="mbadge">初期費用<b>0円</b></span>
+    <span class="mbadge">成果報酬<b>0円</b></span>
+    <span class="mbadge">広告費<b>原則0円</b></span>
+    <span class="mbadge"><b>全業種・全エリア</b>対応</span>
+    <span class="mbadge"><b>正社員</b>特化</span>
+    <span class="mbadge">契約は<b>月単位</b></span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <p class="lead-in">スーパー人事くんに任せれば</p>
+    <div class="chev"></div>
+    <h2 class="big-state"><span class="nb">「採用の実務」が、</span><span class="nb">まるごと無くなる</span></h2>
+    <div class="bubbles">
+      <div class="bubble">採用費を払っても、応募が来ない</div>
+      <div class="bubble">日程調整の途中で、連絡がつかなくなる</div>
+      <div class="bubble">面接を設定したのに、当日に来ない</div>
+      <div class="bubble">エージェントの成功報酬が高すぎる</div>
+    </div>
+    <p class="turn">本業の合間の“片手間採用”では、<b>返信が半日遅れただけで応募者は他社へ流れます。</b></p>
+  </div>
+</section>
+
+<section class="sec-tint">
+  <div class="wrap">
+    <div style="text-align:center"><div class="eyebrow-en">SCOPE</div></div>
+    <h2 class="big-state"><span class="nb">スーパー人事くんが</span><br class="pc"><span class="nb">すべての採用の</span><span class="nb">最強のパートナーに</span></h2>
+    <div class="scope">
+      <div class="scope-card">
+        <span class="ribbon ribbon-teal">スーパー人事くんが支援すること</span>
+        <div class="svc">
+          <div class="svc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10.5 13h7M10.5 16.5h5"/></svg>
+            <span>求人票の作成・改善・運用</span>
+          </div>
+          <div class="svc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="8" r="3.5"/><path d="M4 20c0-3.3 2.7-6 6-6"/><path d="M14 17.5l2.2 2.2 4-4"/></svg>
+            <span>候補者の選定</span>
+          </div>
+          <div class="svc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>
+            <span>応募者への一次対応</span>
+          </div>
+          <div class="svc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16l-6.2 7.2V18l-3.6 2.4v-8.2z"/></svg>
+            <span>1次スクリーニングの対応</span>
+          </div>
+          <div class="svc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M4 10.5h16M8.5 4v4M15.5 4v4"/><circle cx="12" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg>
+            <span>最終面接の日程調整</span>
+          </div>
+          <div class="svc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M7 20v-6M12 20V9M17 20v-9"/></svg>
+            <span>月次レポート・定例MTG</span>
+          </div>
+        </div>
+      </div>
+      <div class="scope-card scope-you">
+        <span class="ribbon ribbon-gold" style="align-self:center">貴社に残る仕事</span>
+        <strong>最終面接だけ</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="points">
+  <div class="wrap">
+    <div class="point">
+      <div class="point-copy">
+        <div class="point-eyebrow">POINT 1</div>
+        <h3>定額だから、<br>面接し放題・採用し放題</h3>
+        <p>面接数・採用人数に上限を設けていません。何名採用しても追加費用は0円。人数が増えるほど、1名あたりの採用コストは下がっていきます。</p>
+      </div>
+      <div class="mock">
+        <span class="mock-tag">何名採用しても定額</span>
+        <div class="mock-card">
+          <div class="mock-row"><span>今月の採用人数</span><span>3名</span></div>
+          <div class="mock-zero"><i>追加費用</i><b>0</b><i>円</i></div>
+          <p class="mock-cap">月額の代行費以外、請求はありません</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="point">
+      <div class="point-copy">
+        <div class="point-eyebrow">POINT 2</div>
+        <h3>貴社の対応は、<br>“最終面接だけ”</h3>
+        <p>求人票の作成から1次スクリーニングまで丸ごとお任せいただけます。貴社にお願いするのは、初回ヒアリングと、絞り込まれた候補者との最終面接だけです。</p>
+      </div>
+      <div class="mock">
+        <span class="mock-tag">貴社の作業はこれだけ</span>
+        <div class="mock-card">
+          <div class="mock-row"><span>求人票の作成</span><span class="ok">おまかせ</span></div>
+          <div class="mock-row"><span>応募者への一次対応</span><span class="ok">おまかせ</span></div>
+          <div class="mock-row"><span>日程調整・1次スクリーニング</span><span class="ok">おまかせ</span></div>
+          <div class="mock-row"><span>最終面接</span><span class="you">貴社</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="point">
+      <div class="point-copy">
+        <div class="point-eyebrow">POINT 3</div>
+        <h3>初期費用・成果報酬・<br>広告費、ぜんぶ0円</h3>
+        <p>いただくのは月額の代行費のみ。広告費も原則0円で運用し、有料媒体が有効と判断した場合は、必ず事前にご相談したうえでのみ利用します。無断で費用が発生することはありません。</p>
+      </div>
+      <div class="mock">
+        <span class="mock-tag">かかるのは月額だけ</span>
+        <div class="mock-card">
+          <div class="mock-row"><span>初期費用</span><span>0円</span></div>
+          <div class="mock-row"><span>成果報酬</span><span>0円</span></div>
+          <div class="mock-row"><span>広告費</span><span>原則0円</span></div>
+          <div class="mock-row"><span>月額（税別）</span><span style="color:var(--teal)">100,000円〜</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <h2><span class="nb">採用の実務に、</span><span class="nb">もう時間を使わない。</span></h2>
+    <p>詳しくは、お問い合わせください。いまの採用状況に合わせた進め方をご提案します。</p>
+    <div class="band-cta">
+      <a class="pill pill-white pill-lg" href="/contact.html">無料相談する<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
+      <a class="pill pill-ink pill-lg" href="tel:0120058053">0120-058-053<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span></a>
+    </div>
+  </div>
+</div>
+
+<section id="results">
+  <div class="wrap">
+    <div style="text-align:center"><div class="eyebrow-en">RESULTS</div></div>
+    <h2 class="big-state"><span class="nb">支援開始から</span><span class="nb">1ヶ月間の応募数</span></h2>
+    <p class="sec-sub">実際に当社が求人票の作成から運用まで行った職種の実績です。</p>
+
+    <div class="res">
+      <div class="rcard"><div class="rjob">マーケティング職</div><div class="rnum">84<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
+      <div class="rcard"><div class="rjob">医療事務</div><div class="rnum">47<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
+      <div class="rcard"><div class="rjob">倉庫作業員</div><div class="rnum">38<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
+    </div>
+    <p class="note">※ 職種・エリア・募集条件により成果は異なります。応募数を保証するものではありません。</p>
+  </div>
+</section>
+
+<section class="sec-tint" id="plan">
+  <div class="wrap narrow">
+    <div style="text-align:center"><div class="eyebrow-en">PLAN</div></div>
+    <h2 class="big-state">プラン・料金</h2>
+    <p class="sec-sub">月額の代行費だけの、ひとつのプランです。人数や成果による追加請求はありません。</p>
+    <dl class="plan-rows">
+      <div class="plan-row">
+        <dt>月額料金（税別）</dt>
+        <dd><b>100,000</b> 円〜／月<small>初期費用0円・契約は月単位</small></dd>
+      </div>
+      <div class="plan-row">
+        <dt>面接・採用人数</dt>
+        <dd>上限なし<small>何名採用しても追加費用はかかりません</small></dd>
+      </div>
+      <div class="plan-row">
+        <dt>月額に含まれる業務</dt>
+        <dd>求人票の作成・改善・運用／候補者の選定／応募者への一次対応／1次スクリーニングの対応／最終面接の日程調整／月次レポート／定例ミーティング（月1回）</dd>
+      </div>
+      <div class="plan-row">
+        <dt>広告費</dt>
+        <dd>原則0円<small>有料媒体は事前にご相談のうえでのみ利用し、別途お見積りします</small></dd>
+      </div>
+    </dl>
+    <div class="plan-badges">
+      <span class="pbadge">初期費用 0円</span>
+      <span class="pbadge">成果報酬 0円</span>
+      <span class="pbadge">面接・採用人数 上限なし</span>
+      <span class="pbadge">正社員特化</span>
+      <span class="pbadge">契約は月単位</span>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <div style="text-align:center"><div class="eyebrow-en">FLOW</div></div>
+    <h2 class="big-state"><span class="nb">ご相談から</span><span class="nb">採用までの流れ</span></h2>
+    <div class="tl">
+      <div class="tl-row"><div class="tl-n">01</div><div><h3>無料相談（オンライン可）</h3><p>いまの採用状況と、採りたい人物像をお伺いします。ご相談は無料です。</p></div></div>
+      <div class="tl-row"><div class="tl-n">02</div><div><h3>ご契約・初回ヒアリング</h3><p>求人票をつくるために必要なことをまとめてお聞きします。貴社の作業はここで一度終わります。</p></div></div>
+      <div class="tl-row"><div class="tl-n">03</div><div><h3>求人票の作成・掲載</h3><p>貴社の魅力を引き出す求人票を作成し、掲載の設定まで行います。</p></div></div>
+      <div class="tl-row"><div class="tl-n">04</div><div><h3>応募対応・日程調整・1次スクリーニング</h3><p>応募者への連絡、日程の調整、1次スクリーニングまで当社が対応します。</p></div></div>
+      <div class="tl-row"><div class="tl-n">05</div><div><h3>最終面接（貴社）</h3><p>絞り込まれた候補者と会って、採用をお決めください。</p></div></div>
+      <div class="tl-row"><div class="tl-n">06</div><div><h3>月次レポート・定例ミーティング</h3><p>応募と選考の状況をご報告し、次の打ち手を一緒に決めます。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-tint" id="faq">
+  <div class="wrap">
+    <div style="text-align:center"><div class="eyebrow-en">FAQ</div></div>
+    <h2 class="big-state">よくあるご質問</h2>
+    <div class="faq">
+      <details open>
+        <summary>「採用し放題」とありますが、本当に何名採用しても追加料金はかからないのですか？</summary>
+        <div class="faq-a">はい。面接数・採用人数による追加請求は一切ありません。いただくのは月額の代行費のみです。有料媒体への出稿が必要な場合だけ、事前にご相談したうえで別途お見積りします。</div>
+      </details>
+      <details>
+        <summary>何件くらい応募が来ますか。件数の保証はありますか？</summary>
+        <div class="faq-a">応募数の保証はしておりません。応募の集まりやすさは職種・エリア・条件によって大きく変わるためです。無料相談の中で、貴社の職種に近い実績をもとに目安をお伝えします。</div>
+      </details>
+      <details>
+        <summary>これは人材紹介のサービスですか？</summary>
+        <div class="faq-a">いいえ。採用実務の運用代行サービスです。採用が決まった時点で成功報酬が発生する仕組みではなく、月額固定で採用の実務をお引き受けする契約です。</div>
+      </details>
+      <details>
+        <summary>対応できる業種・職種・エリアに制限はありますか？</summary>
+        <div class="faq-a">すべての業種・職種・エリアに対応しています。募集条件によっては採用までにお時間をいただく場合がありますので、まずは無料相談でご状況をお聞かせください。</div>
+      </details>
+      <details>
+        <summary>1次スクリーニングまで任せて、うちの基準とずれませんか？</summary>
+        <div class="faq-a">初回ヒアリングで、求める人物像・外せない条件・見送りたい条件を細かくお伺いし、その基準に沿って1次スクリーニングを行います。基準は運用しながら定例ミーティングで調整していきます。</div>
+      </details>
+      <details>
+        <summary>契約期間の縛りはありますか？</summary>
+        <div class="faq-a">契約は月単位です。長期の縛りは設けていません。</div>
+      </details>
+      <details>
+        <summary>広告費は本当に0円ですか？</summary>
+        <div class="faq-a">原則0円で運用します。採用の難易度が高く有料媒体の利用が有効と判断した場合のみ、事前にご相談し、ご了承をいただいたうえで利用します。無断で広告費が発生することはありません。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow-en">CONTACT</div>
+    <h2 class="big-state">まずは、無料相談から。</h2>
+    <p class="sec-sub">いまの採用状況をお伺いし、貴社に合う進め方をご提案します。<br class="pc">ご相談は無料です。</p>
+    <div class="contact-cta">
+      <a class="pill pill-red pill-lg" href="/contact.html">お問い合わせ<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
+      <a class="pill pill-ink pill-lg" href="/contact.html">資料ダウンロード<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
+    </div>
+    <div class="contact-tel">
+      <div class="lbl">お電話でのご相談（通話無料）</div>
+      <a href="tel:0120058053">0120-058-053</a>
+      <p class="note">いただいた情報は、最適なご提案及び情報提供のために利用いたします。無理な営業は一切いたしません。</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-co">
+        <b>スーパー人事くん</b>
+        運営: スパイラル産業株式会社（代表取締役 荒武 大翔）<br>
+        〒880-0805 宮崎県宮崎市橘通東3丁目1-7 プラムビル5F　TEL: 0120-058-053
+      </div>
+      <nav class="foot-links">
+        <a href="/contact.html">お問い合わせ</a>
+        <a href="#" data-privacy>プライバシーポリシー</a>
+        <a href="https://www.spiral-sangyo.com/" target="_blank" rel="noopener">運営会社</a>
+      </nav>
+    </div>
+    <p class="copyright">© スパイラル産業株式会社</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var track = document.getElementById("mqTrack");
+  if(!track) return;
+  var originals = Array.prototype.slice.call(track.children);
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var SPEED = 45; // 1秒あたりの移動px
+
+  function build(){
+    if(reduce.matches){
+      track.style.animation = "none";
+      return;
+    }
+    // 一度1セットに戻す
+    track.innerHTML = "";
+    originals.forEach(function(n){ track.appendChild(n.cloneNode(true)); });
+    var setW = track.scrollWidth;
+    if(!setW) return;
+    // 画面幅の2倍以上を満たす複製数（半分で割り切れるよう偶数にする）
+    var need = Math.ceil((window.innerWidth * 2) / setW);
+    if(need < 2) need = 2;
+    if(need % 2 !== 0) need += 1;
+    for(var i = 1; i < need; i++){
+      originals.forEach(function(n){ track.appendChild(n.cloneNode(true)); });
+    }
+    // 移動量＝全体の50%。速度を一定に保つため所要時間を計算
+    var travel = track.scrollWidth / 2;
+    track.style.setProperty("--mq-dur", (travel / SPEED).toFixed(2) + "s");
+  }
+
+  var t;
+  function onResize(){ clearTimeout(t); t = setTimeout(build, 150); }
+  window.addEventListener("resize", onResize);
+  if(reduce.addEventListener) reduce.addEventListener("change", build);
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(build); }
+  build();
+})();
+</script>
+
+
+<div class="pp-overlay" id="ppOverlay" role="dialog" aria-modal="true" aria-labelledby="ppTitle">
+  <div class="pp-modal">
+    <div class="pp-head">
+      <h2 id="ppTitle">プライバシーポリシー</h2>
+      <button class="pp-close" id="ppClose" type="button" aria-label="閉じる">×</button>
+    </div>
+    <div class="pp-body">
+      <p class="pp-updated">制定日: 2026年8月21日</p>
+      <p style="margin-top:12px">スパイラル産業株式会社（以下「当社」といいます）は、採用運用代行サービス「スーパー人事くん」（以下「本サービス」といいます）の提供にあたり、お客様の個人情報を以下の方針に基づいて取り扱います。</p>
+
+      <h3>1. 取得する情報</h3>
+      <p>当社は、本サービスのウェブサイトを通じて、次の情報を取得します。</p>
+      <ul>
+        <li>お問い合わせフォームにご入力いただく情報（会社名、お名前、電話番号、メールアドレス、お問い合わせ内容）</li>
+        <li>ウェブサイトの利用状況に関する情報（アクセス解析ツールによる閲覧履歴等。個人を特定するものではありません）</li>
+      </ul>
+
+      <h3>2. 利用目的</h3>
+      <p>取得した個人情報は、次の目的で利用します。</p>
+      <ul>
+        <li>お問い合わせ・無料相談へのご回答、日程のご連絡</li>
+        <li>本サービスに関するご案内・資料の送付</li>
+        <li>本サービスの品質向上・改善のための分析</li>
+      </ul>
+
+      <h3>3. 第三者への提供</h3>
+      <p>当社は、法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供しません。</p>
+
+      <h3>4. 外部サービスの利用</h3>
+      <p>お問い合わせフォームの運用には Google LLC の提供する Google フォームを利用しています。入力された情報は Google のサーバーに保存され、Google のプライバシーポリシーが適用されます。</p>
+
+      <h3>5. 安全管理</h3>
+      <p>当社は、個人情報への不正アクセス、紛失、漏えい等を防止するため、必要かつ適切な安全管理措置を講じます。</p>
+
+      <h3>6. 開示・訂正・削除のご請求</h3>
+      <p>ご本人からの個人情報の開示・訂正・利用停止・削除のご請求には、ご本人であることを確認のうえ、速やかに対応します。下記の窓口までご連絡ください。</p>
+      <div class="pp-box">
+        スパイラル産業株式会社<br>
+        〒880-0805　宮崎県宮崎市橘通東3丁目1-7　プラムビル5F<br>
+        電話: 0120-058-053（フリーダイヤル・通話無料）
+      </div>
+
+      <h3>7. 本ポリシーの改定</h3>
+      <p>本ポリシーの内容は、法令の改正やサービス内容の変更に応じて、予告なく改定することがあります。改定後の内容は本ページに掲載した時点から適用されます。</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var ov = document.getElementById("ppOverlay");
+  var closeBtn = document.getElementById("ppClose");
+  var lastFocus = null;
+  function open(){ lastFocus = document.activeElement; ov.classList.add("open"); document.body.style.overflow="hidden"; closeBtn.focus(); }
+  function close(){ ov.classList.remove("open"); document.body.style.overflow=""; if(lastFocus && lastFocus.focus){ lastFocus.focus(); } }
+  document.addEventListener("click", function(ev){
+    var a = ev.target.closest ? ev.target.closest("[data-privacy]") : null;
+    if(a){ ev.preventDefault(); open(); return; }
+    if(ev.target === ov){ close(); }
+  }, true);
+  closeBtn.addEventListener("click", close);
+  document.addEventListener("keydown", function(ev){ if(ev.key === "Escape" && ov.classList.contains("open")){ close(); } });
+})();
+</script>
+
+
+<script>
+document.addEventListener("click", function(ev){
+  var a = ev.target.closest ? ev.target.closest('a[href^="#"]') : null;
+  if(!a) return;
+  var id = a.getAttribute("href").slice(1);
+  var el = id ? document.getElementById(id) : null;
+  if(!el) return;
+  ev.preventDefault();
+  var before = (document.scrollingElement||document.documentElement).scrollTop;
+  el.scrollIntoView({behavior:"smooth", block:"start"});
+  setTimeout(function(){
+    var now = (document.scrollingElement||document.documentElement).scrollTop;
+    if(Math.abs(now-before) < 2){ el.scrollIntoView({block:"start"}); }
+  }, 350);
+}, true);
+</script>
+
