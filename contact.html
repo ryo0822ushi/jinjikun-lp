@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>お問い合わせ・資料請求｜スーパー人事くん</title>
 <meta name="description" content="スーパー人事くんへのお問い合わせ・資料請求はこちら。1営業日以内にご連絡します。お電話（0120-058-053）でも受け付けています。">
@@ -11,6 +12,7 @@
 
 <style>
 :root{
+  color-scheme:light;
   --ink:#14181C; --muted:#5F6B76; --line:#E5E9EC;
   --ground:#FFFFFF; --tint:#F4F8FA;
   --teal:#00A3C4; --teal-deep:#007A94; --teal-soft:#E0F4F9;
@@ -20,18 +22,7 @@
   --hero-top:#D9F1F7;
   --shadow:0 2px 0.375rem rgba(20,24,28,.06), 0 1rem 2.5rem rgba(20,24,28,.08);
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ink:#EDF1F4; --muted:#9AA7B1; --line:#2A3238;
-    --ground:#14181C; --tint:#1A2126;
-    --teal:#2BB8D6; --teal-deep:#7FD9EA; --teal-soft:#0D2C34;
-    --red:#FF574C; --red-deep:#FF7A70;
-    --gold-soft:#2A2115; --gold:#E0AE5E;
-    --on-red:#1C0F0E; --card:#1A2126;
-    --hero-top:#0E2A31;
-    --shadow:0 2px 0.375rem rgba(0,0,0,.35), 0 1rem 2.5rem rgba(0,0,0,.4);
-  }
-}
+/* ダークモードでの自動反転は無効（ライト固定）。端末の設定に関わらず同じ配色で表示する */
 :root[data-theme="dark"]{
   --ink:#EDF1F4; --muted:#9AA7B1; --line:#2A3238;
   --ground:#14181C; --tint:#1A2126;

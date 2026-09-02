@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>スーパー人事くん｜月10万円で採用し放題の定額制・採用代行</title>
 <meta name="description" content="月10万円で採用し放題。貴社の対応は最終面接だけ。求人票の作成から応募者対応・1次スクリーニングまで丸ごと代行する定額制の採用代行サービスです。初期費用・成果報酬・広告費0円。">
@@ -14,6 +15,7 @@
 
 <style>
 :root{
+  color-scheme:light;
   --ink:#14181C;
   --muted:#5F6B76;
   --line:#E5E9EC;
@@ -32,27 +34,7 @@
   --hero-top:#CFEDF6;
   --shadow:0 2px 0.375rem rgba(20,24,28,.06), 0 1rem 2.5rem rgba(20,24,28,.08);
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ink:#EDF1F4;
-    --muted:#9AA7B1;
-    --line:#2A3238;
-    --ground:#14181C;
-    --tint:#1A2126;
-    --teal:#2BB8D6;
-    --teal-deep:#7FD9EA;
-    --teal-soft:#0D2C34;
-    --red:#FF574C;
-    --red-deep:#FF7A70;
-    --gold-soft:#2A2115;
-    --gold:#E0AE5E;
-    --on-teal:#0B1C21;
-    --on-red:#1C0F0E;
-    --card:#1A2126;
-    --hero-top:#103440;
-    --shadow:0 2px 0.375rem rgba(0,0,0,.35), 0 1rem 2.5rem rgba(0,0,0,.4);
-  }
-}
+/* ダークモードでの自動反転は無効（ライト固定）。端末の設定に関わらず同じ配色で表示する */
 :root[data-theme="dark"]{
   --ink:#EDF1F4;
   --muted:#9AA7B1;
@@ -154,7 +136,7 @@ img{max-width:100%}
 }
 .hero h1{font-size:3.8rem;font-weight:900;letter-spacing:.01em}
 .hero h1 .brand{white-space:nowrap;letter-spacing:-.02em}
-.hero h1 .accent{color:var(--teal)}
+.hero h1 .accent{color:var(--teal);white-space:nowrap}
 .hero-lead{
   margin:1.375rem auto 0;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;
   font-size:1.75rem;letter-spacing:.02em;color:var(--ink);
@@ -415,28 +397,31 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
   .hero-eyebrow{font-size:0.78rem;margin-bottom:0.7rem}
   .hero-lead{font-size:1.25rem;margin-top:1rem}
   .hero-lead .mark{border-bottom-width:2px}
-  .hero-sub{font-size:1rem;line-height:1.8}
+  .hero-sub{font-size:1.12rem;line-height:1.8}
   .hero-cta{margin-top:1.6rem}
-  .hero-note{font-size:0.72rem;margin-top:0.9rem}
+  .hero-note{font-size:0.81rem;margin-top:0.9rem}
   section{padding:3.75rem 0}
   .lead-in{font-size:1.15rem}
   .chev{width:8.5rem;margin:0.7rem auto 1.6rem}
-  .big-state{font-size:1.9rem}
-  .eyebrow-en{font-size:0.72rem;margin-bottom:0.6rem}
+  .big-state{font-size:2.04rem}
+  .eyebrow-en{font-size:0.81rem;margin-bottom:0.6rem}
   .sec-sub{font-size:0.95rem;line-height:1.8;margin-top:1rem}
   .bubble{padding:1.1rem 1.3rem;font-size:0.95rem}
-  .turn{margin-top:2.4rem}
+  .turn{margin-top:2.4rem;white-space:normal;font-size:1.32rem;line-height:1.6}
   .point-eyebrow{font-size:0.72rem}
   .mock{min-height:0;padding:2.2rem 1.4rem}
+  .svc{grid-template-columns:repeat(2,1fr)}
+  .scope-card{padding:1.5rem 1.15rem 1.7rem}
+  .svc-item span{font-size:0.82rem}
   .mock-tag{font-size:0.72rem;top:0.9rem;right:0.9rem}
   .tl-row{grid-template-columns:3.2rem 1fr;gap:1rem}
   .tl-n{height:2.1rem;font-size:0.75rem}
-  .tl-row h3{font-size:1rem}
+  .tl-row h3{font-size:1.09rem}
   .tl-row p{font-size:0.88rem}
   summary{font-size:0.95rem;padding:1.05rem 1.2rem}
   .faq-a{font-size:0.9rem;padding:1rem 1.2rem 1.2rem 2.6rem}
   .band{padding:3.5rem 0}
-  .band h2{font-size:1.66rem}
+  .band h2{font-size:1.78rem}
   .scope-you strong{font-size:1.5rem}
   .point h3{font-size:1.4rem}
   .point p{font-size:0.95rem}
@@ -448,9 +433,9 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
   .logo{width:100%;text-align:center}
   .nav-cta{margin-left:0;width:100%;justify-content:center}
   /* 実績カード：職種名が2行になって数字がずれるのを防ぐ */
-  .rcard{padding:1.5rem 0.4rem 1.25rem}
-  .rjob{font-size:0.8rem;line-height:1.5;min-height:1.5em;margin-bottom:0.5rem}
-  .rlbl{font-size:0.72rem;line-height:1.5}
+  .rcard{padding:1.5rem 0.25rem 1.25rem}
+  .rjob{font-size:0.78rem;line-height:1.5;min-height:3em;letter-spacing:0;margin-bottom:0.4rem}
+  .rlbl{font-size:min(0.73rem, 2.55vw);line-height:1.5;letter-spacing:0;white-space:nowrap}
 }
 
 </style>
@@ -468,14 +453,14 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
 <div class="hero">
   <div class="wrap">
     <span class="hero-eyebrow">採用まるごと代行サービス</span>
-    <h1>月10万円で、<span class="accent">採用し放題。</span><br><span class="brand">スーパー人事くん</span></h1>
+    <h1><span class="nb">月10万円で、</span><span class="accent nb">採用し放題。</span><br><span class="brand">スーパー人事くん</span></h1>
     <p class="hero-lead">対応は、<span class="mark">最終面接だけ。</span></p>
     <p class="hero-sub"><span class="nb">求人票づくりから</span><span class="nb">応募者への一次対応、</span><span class="nb">日程調整、</span><span class="nb">1次スクリーニングまで。</span><br class="pc"><span class="nb">採用の実務をまるごと代行する</span><span class="nb">定額制サービスです。</span></p>
     <div class="hero-cta">
       <a class="pill pill-red pill-lg" href="/contact.html">無料相談する<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
       <a class="pill pill-ink pill-lg" href="/contact.html">資料ダウンロード<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
     </div>
-    <p class="hero-note">初期費用0円／成果報酬0円／契約は月単位。ご相談は無料です。</p>
+    <p class="hero-note"><span class="nb">初期費用0円／</span><span class="nb">成果報酬0円／</span><span class="nb">契約は月単位。</span><span class="nb">ご相談は無料です。</span></p>
   </div>
 </div>
 
@@ -503,7 +488,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
       <div class="bubble">面接を設定したのに、当日に来ない</div>
       <div class="bubble">エージェントの成功報酬が高すぎる</div>
     </div>
-    <p class="turn">本業の合間の“片手間採用”では、<b>返信が半日遅れただけで応募者は他社へ流れます。</b></p>
+    <p class="turn"><span class="nb">本業の合間の“片手間採用”では、</span><b><span class="nb">返信が半日遅れただけで</span><span class="nb">応募者は他社へ流れます。</span></b></p>
   </div>
 </section>
 
@@ -517,7 +502,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
         <div class="svc">
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10.5 13h7M10.5 16.5h5"/></svg>
-            <span>求人票の作成・改善・運用</span>
+            <span><span class="nb">求人票の</span><span class="nb">作成・改善・運用</span></span>
           </div>
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="8" r="3.5"/><path d="M4 20c0-3.3 2.7-6 6-6"/><path d="M14 17.5l2.2 2.2 4-4"/></svg>
@@ -525,19 +510,19 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
           </div>
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>
-            <span>応募者への一次対応</span>
+            <span><span class="nb">応募者への</span><span class="nb">一次対応</span></span>
           </div>
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16l-6.2 7.2V18l-3.6 2.4v-8.2z"/></svg>
-            <span>1次スクリーニングの対応</span>
+            <span><span class="nb">1次スクリーニング</span><span class="nb">の対応</span></span>
           </div>
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M4 10.5h16M8.5 4v4M15.5 4v4"/><circle cx="12" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg>
-            <span>最終面接の日程調整</span>
+            <span><span class="nb">最終面接の</span><span class="nb">日程調整</span></span>
           </div>
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M7 20v-6M12 20V9M17 20v-9"/></svg>
-            <span>月次レポート・定例MTG</span>
+            <span><span class="nb">月次レポート・</span><span class="nb">定例MTG</span></span>
           </div>
         </div>
       </div>
@@ -555,7 +540,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
       <div class="point-copy">
         <div class="point-eyebrow">POINT 1</div>
         <h3>定額だから、<br>面接し放題・採用し放題</h3>
-        <p>面接数・採用人数に上限を設けていません。何名採用しても追加費用は0円。人数が増えるほど、1名あたりの採用コストは下がっていきます。</p>
+        <p><span class="nb">面接数・採用人数に上限を設けていません。</span><span class="nb">何名採用しても追加費用は0円。</span><span class="nb">人数が増えるほど、</span><span class="nb">1名あたりの採用コストは</span><span class="nb">下がっていきます。</span></p>
       </div>
       <div class="mock">
         <span class="mock-tag">何名採用しても定額</span>
@@ -571,7 +556,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
       <div class="point-copy">
         <div class="point-eyebrow">POINT 2</div>
         <h3>貴社の対応は、<br>“最終面接だけ”</h3>
-        <p>求人票の作成から1次スクリーニングまで丸ごとお任せいただけます。貴社にお願いするのは、初回ヒアリングと、絞り込まれた候補者との最終面接だけです。</p>
+        <p><span class="nb">求人票の作成から</span><span class="nb">1次スクリーニングまで</span><span class="nb">丸ごとお任せいただけます。</span><span class="nb">貴社にお願いするのは、</span><span class="nb">初回ヒアリングと、</span><span class="nb">絞り込まれた候補者との</span><span class="nb">最終面接だけです。</span></p>
       </div>
       <div class="mock">
         <span class="mock-tag">貴社の作業はこれだけ</span>
@@ -588,7 +573,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
       <div class="point-copy">
         <div class="point-eyebrow">POINT 3</div>
         <h3>初期費用・成果報酬・<br>広告費、ぜんぶ0円</h3>
-        <p>いただくのは月額の代行費のみ。広告費も原則0円で運用し、有料媒体が有効と判断した場合は、必ず事前にご相談したうえでのみ利用します。無断で費用が発生することはありません。</p>
+        <p><span class="nb">いただくのは月額の代行費のみ。</span><span class="nb">広告費も原則0円で運用し、</span><span class="nb">有料媒体が有効と判断した場合は、</span><span class="nb">必ず事前にご相談したうえで</span><span class="nb">のみ利用します。</span><span class="nb">無断で費用が発生することは</span><span class="nb">ありません。</span></p>
       </div>
       <div class="mock">
         <span class="mock-tag">かかるのは月額だけ</span>
@@ -606,7 +591,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
 <div class="band">
   <div class="wrap">
     <h2><span class="nb">採用の実務に、</span><span class="nb">もう時間を使わない。</span></h2>
-    <p>詳しくは、お問い合わせください。いまの採用状況に合わせた進め方をご提案します。</p>
+    <p><span class="nb">詳しくは、</span><span class="nb">お問い合わせください。</span><span class="nb">いまの採用状況に合わせた</span><span class="nb">進め方をご提案します。</span></p>
     <div class="band-cta">
       <a class="pill pill-white pill-lg" href="/contact.html">無料相談する<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
       <a class="pill pill-ink pill-lg" href="tel:0120058053">0120-058-053<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span></a>
@@ -618,14 +603,14 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
   <div class="wrap">
     <div style="text-align:center"><div class="eyebrow-en">RESULTS</div></div>
     <h2 class="big-state"><span class="nb">支援開始から</span><span class="nb">1ヶ月間の応募数</span></h2>
-    <p class="sec-sub">実際に当社が求人票の作成から運用まで行った職種の実績です。</p>
+    <p class="sec-sub"><span class="nb">実際に当社が求人票の作成から運用まで</span><span class="nb">行った職種の実績です。</span></p>
 
     <div class="res">
       <div class="rcard"><div class="rjob">マーケティング職</div><div class="rnum">84<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
       <div class="rcard"><div class="rjob">医療事務</div><div class="rnum">47<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
       <div class="rcard"><div class="rjob">倉庫作業員</div><div class="rnum">38<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
     </div>
-    <p class="note">※ 職種・エリア・募集条件により成果は異なります。応募数を保証するものではありません。</p>
+    <p class="note"><span class="nb">※ 職種・エリア・</span><span class="nb">募集条件により成果は異なります。</span><span class="nb">応募数を保証するものではありません。</span></p>
   </div>
 </section>
 
@@ -633,7 +618,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
   <div class="wrap narrow">
     <div style="text-align:center"><div class="eyebrow-en">PLAN</div></div>
     <h2 class="big-state">プラン・料金</h2>
-    <p class="sec-sub">月額の代行費だけの、ひとつのプランです。人数や成果による追加請求はありません。</p>
+    <p class="sec-sub"><span class="nb">月額の代行費だけの、</span><span class="nb">ひとつのプランです。</span><span class="nb">人数や成果による</span><span class="nb">追加請求はありません。</span></p>
     <dl class="plan-rows">
       <div class="plan-row">
         <dt>月額料金（税別）</dt>
@@ -645,11 +630,11 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
       </div>
       <div class="plan-row">
         <dt>月額に含まれる業務</dt>
-        <dd>求人票の作成・改善・運用／候補者の選定／応募者への一次対応／1次スクリーニングの対応／最終面接の日程調整／月次レポート／定例ミーティング（月1回）</dd>
+        <dd><span class="nb">求人票の作成・</span><span class="nb">改善・運用／</span><span class="nb">候補者の選定／</span><span class="nb">応募者への一次対応／</span><span class="nb">1次スクリーニングの対応／</span><span class="nb">最終面接の日程調整／</span><span class="nb">月次レポート／</span><span class="nb">定例ミーティング（月1回）</span></dd>
       </div>
       <div class="plan-row">
         <dt>広告費</dt>
-        <dd>原則0円<small>有料媒体は事前にご相談のうえでのみ利用し、別途お見積りします</small></dd>
+        <dd>原則0円<small><span class="nb">有料媒体は事前にご相談のうえでのみ利用し、</span><span class="nb">別途お見積りします</span></small></dd>
       </div>
     </dl>
     <div class="plan-badges">
@@ -667,12 +652,12 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
     <div style="text-align:center"><div class="eyebrow-en">FLOW</div></div>
     <h2 class="big-state"><span class="nb">ご相談から</span><span class="nb">採用までの流れ</span></h2>
     <div class="tl">
-      <div class="tl-row"><div class="tl-n">01</div><div><h3>無料相談（オンライン可）</h3><p>いまの採用状況と、採りたい人物像をお伺いします。ご相談は無料です。</p></div></div>
-      <div class="tl-row"><div class="tl-n">02</div><div><h3>ご契約・初回ヒアリング</h3><p>求人票をつくるために必要なことをまとめてお聞きします。貴社の作業はここで一度終わります。</p></div></div>
-      <div class="tl-row"><div class="tl-n">03</div><div><h3>求人票の作成・掲載</h3><p>貴社の魅力を引き出す求人票を作成し、掲載の設定まで行います。</p></div></div>
-      <div class="tl-row"><div class="tl-n">04</div><div><h3>応募対応・日程調整・1次スクリーニング</h3><p>応募者への連絡、日程の調整、1次スクリーニングまで当社が対応します。</p></div></div>
-      <div class="tl-row"><div class="tl-n">05</div><div><h3>最終面接（貴社）</h3><p>絞り込まれた候補者と会って、採用をお決めください。</p></div></div>
-      <div class="tl-row"><div class="tl-n">06</div><div><h3>月次レポート・定例ミーティング</h3><p>応募と選考の状況をご報告し、次の打ち手を一緒に決めます。</p></div></div>
+      <div class="tl-row"><div class="tl-n">01</div><div><h3>無料相談（オンライン可）</h3><p><span class="nb">いまの採用状況と、</span><span class="nb">採りたい人物像をお伺いします。</span><span class="nb">ご相談は無料です。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">02</div><div><h3>ご契約・初回ヒアリング</h3><p><span class="nb">求人票をつくるために</span><span class="nb">必要なことを</span><span class="nb">まとめてお聞きします。</span><span class="nb">貴社の作業はここで一度終わります。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">03</div><div><h3>求人票の作成・掲載</h3><p><span class="nb">貴社の魅力を引き出す求人票を作成し、</span><span class="nb">掲載の設定まで行います。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">04</div><div><h3>応募対応・日程調整・1次スクリーニング</h3><p><span class="nb">応募者への連絡、</span><span class="nb">日程の調整、</span><span class="nb">1次スクリーニングまで当社が対応します。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">05</div><div><h3>最終面接（貴社）</h3><p><span class="nb">絞り込まれた候補者と会って、</span><span class="nb">採用をお決めください。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">06</div><div><h3>月次レポート・定例ミーティング</h3><p><span class="nb">応募と選考の状況をご報告し、</span><span class="nb">次の打ち手を一緒に決めます。</span></p></div></div>
     </div>
   </div>
 </section>
@@ -683,32 +668,32 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
     <h2 class="big-state">よくあるご質問</h2>
     <div class="faq">
       <details open>
-        <summary>「採用し放題」とありますが、本当に何名採用しても追加料金はかからないのですか？</summary>
-        <div class="faq-a">はい。面接数・採用人数による追加請求は一切ありません。いただくのは月額の代行費のみです。有料媒体への出稿が必要な場合だけ、事前にご相談したうえで別途お見積りします。</div>
+        <summary><span class="nb">「採用し放題」とありますが、</span><span class="nb">本当に何名採用しても</span><span class="nb">追加料金はかからないのですか？</span></summary>
+        <div class="faq-a"><span class="nb">はい。面接数・</span><span class="nb">採用人数による追加請求は</span><span class="nb">一切ありません。</span><span class="nb">いただくのは月額の代行費のみです。</span><span class="nb">有料媒体への出稿が必要な場合だけ、</span><span class="nb">事前にご相談したうえで</span><span class="nb">別途お見積りします。</span></div>
       </details>
       <details>
-        <summary>何件くらい応募が来ますか。件数の保証はありますか？</summary>
-        <div class="faq-a">応募数の保証はしておりません。応募の集まりやすさは職種・エリア・条件によって大きく変わるためです。無料相談の中で、貴社の職種に近い実績をもとに目安をお伝えします。</div>
+        <summary><span class="nb">何件くらい応募が来ますか。</span><span class="nb">件数の保証はありますか？</span></summary>
+        <div class="faq-a"><span class="nb">応募数の保証はしておりません。</span><span class="nb">応募の集まりやすさは</span><span class="nb">職種・エリア・</span><span class="nb">条件によって</span><span class="nb">大きく変わるためです。</span><span class="nb">無料相談の中で、</span><span class="nb">貴社の職種に近い実績をもとに</span><span class="nb">目安をお伝えします。</span></div>
       </details>
       <details>
         <summary>これは人材紹介のサービスですか？</summary>
-        <div class="faq-a">いいえ。採用実務の運用代行サービスです。採用が決まった時点で成功報酬が発生する仕組みではなく、月額固定で採用の実務をお引き受けする契約です。</div>
+        <div class="faq-a"><span class="nb">いいえ。採用実務の運用代行サービスです。</span><span class="nb">採用が決まった時点で</span><span class="nb">成功報酬が発生する</span><span class="nb">仕組みではなく、</span><span class="nb">月額固定で採用の実務を</span><span class="nb">お引き受けする契約です。</span></div>
       </details>
       <details>
-        <summary>対応できる業種・職種・エリアに制限はありますか？</summary>
-        <div class="faq-a">すべての業種・職種・エリアに対応しています。募集条件によっては採用までにお時間をいただく場合がありますので、まずは無料相談でご状況をお聞かせください。</div>
+        <summary><span class="nb">対応できる業種・</span><span class="nb">職種・エリアに</span><span class="nb">制限はありますか？</span></summary>
+        <div class="faq-a"><span class="nb">すべての業種・</span><span class="nb">職種・エリアに</span><span class="nb">対応しています。</span><span class="nb">募集条件によっては</span><span class="nb">採用までにお時間を</span><span class="nb">いただく場合が</span><span class="nb">ありますので、</span><span class="nb">まずは無料相談で</span><span class="nb">ご状況をお聞かせください。</span></div>
       </details>
       <details>
-        <summary>1次スクリーニングまで任せて、うちの基準とずれませんか？</summary>
-        <div class="faq-a">初回ヒアリングで、求める人物像・外せない条件・見送りたい条件を細かくお伺いし、その基準に沿って1次スクリーニングを行います。基準は運用しながら定例ミーティングで調整していきます。</div>
+        <summary><span class="nb">1次スクリーニングまで任せて、</span><span class="nb">うちの基準とずれませんか？</span></summary>
+        <div class="faq-a"><span class="nb">初回ヒアリングで、</span><span class="nb">求める人物像・</span><span class="nb">外せない条件・</span><span class="nb">見送りたい条件を</span><span class="nb">細かくお伺いし、</span><span class="nb">その基準に沿って1次スクリーニングを</span><span class="nb">行います。</span><span class="nb">基準は運用しながら</span><span class="nb">定例ミーティングで</span><span class="nb">調整していきます。</span></div>
       </details>
       <details>
         <summary>契約期間の縛りはありますか？</summary>
-        <div class="faq-a">契約は月単位です。長期の縛りは設けていません。</div>
+        <div class="faq-a"><span class="nb">契約は月単位です。</span><span class="nb">長期の縛りは設けていません。</span></div>
       </details>
       <details>
         <summary>広告費は本当に0円ですか？</summary>
-        <div class="faq-a">原則0円で運用します。採用の難易度が高く有料媒体の利用が有効と判断した場合のみ、事前にご相談し、ご了承をいただいたうえで利用します。無断で広告費が発生することはありません。</div>
+        <div class="faq-a"><span class="nb">原則0円で運用します。</span><span class="nb">採用の難易度が</span><span class="nb">高く有料媒体の利用が</span><span class="nb">有効と判断した場合のみ、</span><span class="nb">事前にご相談し、</span><span class="nb">ご了承をいただいたうえで利用します。</span><span class="nb">無断で広告費が発生することはありません。</span></div>
       </details>
     </div>
   </div>
@@ -726,7 +711,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
     <div class="contact-tel">
       <div class="lbl">お電話でのご相談（通話無料）</div>
       <a href="tel:0120058053">0120-058-053</a>
-      <p class="note">いただいた情報は、最適なご提案及び情報提供のために利用いたします。無理な営業は一切いたしません。</p>
+      <p class="note"><span class="nb">いただいた情報は</span><span class="nb">、最適なご提案及び情報提供のために</span><span class="nb">利用いたします。</span><span class="nb">無理な営業は</span><span class="nb">一切いたしません。</span></p>
     </div>
   </div>
 </div>
