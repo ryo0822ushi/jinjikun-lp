@@ -13,6 +13,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
 
+<!-- アクセス計測（Googleアナリティクス4）。測定IDは /analytics.js の中の1行だけを書き換える -->
+<script src="/analytics.js" defer></script>
+
 <style>
 :root{
   color-scheme:light;
@@ -365,6 +368,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
 }
 .pp-body h3:first-of-type{border-top:0;padding-top:0.5rem;margin-top:0.75rem}
 .pp-body ul{padding-left:1.25rem;margin:0.375rem 0}
+.pp-body a{color:var(--teal);word-break:break-all}
 .pp-updated{font-size:0.75rem;color:var(--muted);margin-top:0.875rem}
 .pp-box{background:var(--tint);border-radius:0.625rem;padding:1rem 1.125rem;font-size:0.8438rem;margin-top:0.5rem;line-height:1.9}
 @media (max-width:640px){
@@ -781,7 +785,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
       <button class="pp-close" id="ppClose" type="button" aria-label="閉じる">×</button>
     </div>
     <div class="pp-body">
-      <p class="pp-updated">制定日: 2026年8月21日</p>
+      <p class="pp-updated">制定日: 2026年8月21日／最終改定日: 2026年9月3日</p>
       <p style="margin-top:12px">スパイラル産業株式会社（以下「当社」といいます）は、採用運用代行サービス「スーパー人事くん」（以下「本サービス」といいます）の提供にあたり、お客様の個人情報を以下の方針に基づいて取り扱います。</p>
 
       <h3>1. 取得する情報</h3>
@@ -804,6 +808,7 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
 
       <h3>4. 外部サービスの利用</h3>
       <p>お問い合わせフォームの運用には Google LLC の提供する Google フォームを利用しています。入力された情報は Google のサーバーに保存され、Google のプライバシーポリシーが適用されます。</p>
+<p>また、ウェブサイトの利用状況を把握するため、Google LLC の提供するアクセス解析ツール「Google アナリティクス」を利用しています。Google アナリティクスは Cookie を用いて、閲覧されたページ・滞在時間・参照元（どのサイトや検索から来られたか）、およびお問い合わせフォームの送信や電話番号リンクのタップといった操作の記録を、個人を特定しない形で収集します。お名前・電話番号・メールアドレスなど、ご本人を特定できる情報をアクセス解析ツールに送信することはありません。収集されたデータは Google のプライバシーポリシー（<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>）に基づいて管理されます。収集を希望されない場合は、Google が提供するオプトアウト アドオン（<a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">https://tools.google.com/dlpage/gaoptout</a>）のご利用、またはブラウザの設定で Cookie を無効にすることにより、いつでも停止できます。</p>
 
       <h3>5. 安全管理</h3>
       <p>当社は、個人情報への不正アクセス、紛失、漏えい等を防止するため、必要かつ適切な安全管理措置を講じます。</p>
