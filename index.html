@@ -1,11 +1,11 @@
 <meta charset="utf-8">
 <meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>スーパー人事くん｜月10万円で採用し放題の定額制・採用代行</title>
-<meta name="description" content="月10万円で採用し放題。貴社の対応は最終面接だけ。求人票の作成から応募者対応・1次スクリーニングまで丸ごと代行する定額制の採用代行サービスです。初期費用・成果報酬・広告費0円。">
+<title>スーパー人事くん｜月10万円から採用人事をまるっと代行</title>
+<meta name="description" content="月10万円からの定額制。採用戦略の立案から応募獲得、スクリーニング、面接設定まで、採用人事をまるっと代行します。貴社は最終面接だけでOK。採用人数による追加費用0円・最短1ヶ月からご利用可能。">
 <link rel="canonical" href="https://jinjikun.com/">
-<meta property="og:title" content="スーパー人事くん｜月10万円で採用し放題の定額制・採用代行">
-<meta property="og:description" content="貴社の対応は最終面接だけ。採用の実務をまるごと代行する定額制サービス。">
+<meta property="og:title" content="スーパー人事くん｜月10万円から採用人事をまるっと代行">
+<meta property="og:description" content="応募獲得から面接設定まで、まるっとお任せ。貴社は最終面接だけでOK。">
 <meta property="og:url" content="https://jinjikun.com/">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%2300A3C4%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2736%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27 font-weight=%27bold%27%3E人%3C/text%3E%3C/svg%3E">
@@ -442,13 +442,50 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
   .rlbl{font-size:min(0.73rem, 2.55vw);line-height:1.5;letter-spacing:0;white-space:nowrap}
 }
 
+
+.q-t{display:block}
+
+/* ───── 比較表（新LPの訴求に合わせて追加） ───── */
+.cmp{
+  margin:3rem auto 0;max-width:60rem;background:var(--card);
+  border:1.5px solid var(--line);border-radius:1.125rem;overflow:hidden;box-shadow:var(--shadow);
+}
+.cmp-row{display:grid;grid-template-columns:11rem repeat(3,1fr)}
+.cmp-row + .cmp-row{border-top:1px solid var(--line)}
+.cmp-c{padding:1.0625rem 1rem;font-size:0.875rem;font-weight:500;line-height:1.75}
+.cmp-c + .cmp-c{border-left:1px solid var(--line)}
+.cmp-c small{display:block;font-size:0.75rem;color:var(--muted);margin-top:0.25rem}
+.cmp-th{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.875rem;background:var(--tint)}
+.cmp-head .cmp-c{
+  font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.9062rem;
+  text-align:center;background:var(--tint);
+}
+.cmp-mine{background:var(--teal-soft)}
+.cmp-head .cmp-mine{background:var(--teal);color:var(--on-teal)}
+.cmp-mine b{color:var(--teal-deep);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900}
+.cl{display:none}
+
+@media (max-width:640px){
+  .cmp{margin-top:1.9rem}
+  .cmp-row{grid-template-columns:1fr}
+  .cmp-row.cmp-head{display:none}
+  .cmp-c + .cmp-c{border-left:0;border-top:1px solid var(--line)}
+  .cmp-c{font-size:0.88rem;padding:0.8rem 1.05rem;display:flex;gap:0.7rem;align-items:baseline}
+  .cmp-th{padding:0.75rem 1.05rem;display:block}
+  .cmp-th br{display:none}
+  .cl{
+    display:block;flex:0 0 6.6rem;font-family:"Zen Kaku Gothic New",sans-serif;
+    font-weight:700;font-size:0.76rem;color:var(--muted);font-style:normal;
+  }
+  .cmp-mine .cl{color:var(--teal-deep)}
+  .cmp-c small{margin-top:0.2rem}
+}
 </style>
 
 <header class="nav">
   <div class="wrap">
     <div class="logo">スーパー<em>人事</em>くん</div>
     <div class="nav-cta">
-      <a class="pill pill-ink" href="/contact.html">資料ダウンロード<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
       <a class="pill pill-red" href="/contact.html">お問い合わせ<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
     </div>
   </div>
@@ -456,61 +493,65 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
 
 <div class="hero">
   <div class="wrap">
-    <span class="hero-eyebrow">採用まるごと代行サービス</span>
-    <h1><span class="nb">月10万円で、</span><span class="accent nb">採用し放題。</span><br><span class="brand">スーパー人事くん</span></h1>
-    <p class="hero-lead">対応は、<span class="mark">最終面接だけ。</span></p>
-    <p class="hero-sub"><span class="nb">求人票づくりから</span><span class="nb">応募者への一次対応、</span><span class="nb">日程調整、</span><span class="nb">1次スクリーニングまで。</span><br class="pc"><span class="nb">採用の実務をまるごと代行する</span><span class="nb">定額制サービスです。</span></p>
+    <span class="hero-eyebrow">定額制 採用人事代行</span>
+    <h1><span class="accent nb">月10万円から。</span><br><span class="nb">応募獲得から</span><span class="nb">面接設定まで、</span><span class="nb">まるっとお任せ。</span></h1>
+    <p class="hero-lead">貴社は、<span class="mark">最終面接だけでOK。</span></p>
+    <p class="hero-sub"><span class="nb">採用戦略の立案から</span><span class="nb">応募獲得、</span><span class="nb">スクリーニング、</span><span class="nb">面接設定まで。</span><br class="pc"><span class="nb">採用人事をまるっと代行する</span><span class="nb">定額制サービスです。</span></p>
     <div class="hero-cta">
       <a class="pill pill-red pill-lg" href="/contact.html">無料相談する<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
-      <a class="pill pill-ink pill-lg" href="/contact.html">資料ダウンロード<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
     </div>
-    <p class="hero-note"><span class="nb">初期費用0円／</span><span class="nb">成果報酬0円／</span><span class="nb">契約は月単位。</span><span class="nb">ご相談は無料です。</span></p>
+    <p class="hero-note"><span class="nb">顧客満足度98％／</span><span class="nb">契約継続率96％／</span><span class="nb">最短1ヶ月〜。</span><span class="nb">ご相談は無料です。</span></p>
   </div>
 </div>
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track" id="mqTrack">
     <span class="mbadge">月額<b>10万円〜</b>の定額制</span>
-    <span class="mbadge">面接・採用人数<b>上限なし</b></span>
-    <span class="mbadge">初期費用<b>0円</b></span>
+    <span class="mbadge">採用人数による追加費用<b>0円</b></span>
     <span class="mbadge">成果報酬<b>0円</b></span>
-    <span class="mbadge">広告費<b>原則0円</b></span>
-    <span class="mbadge"><b>全業種・全エリア</b>対応</span>
-    <span class="mbadge"><b>正社員</b>特化</span>
-    <span class="mbadge">契約は<b>月単位</b></span>
+    <span class="mbadge">広告費<b>基本0円</b></span>
+    <span class="mbadge">顧客満足度<b>98％</b></span>
+    <span class="mbadge">契約継続率<b>96％</b></span>
+    <span class="mbadge">最短<b>1ヶ月〜</b></span>
+    <span class="mbadge"><b>全業種・全職種</b>対応</span>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <p class="lead-in">スーパー人事くんに任せれば</p>
+    <p class="lead-in">採用でこんなこと、ありませんか</p>
     <div class="chev"></div>
-    <h2 class="big-state"><span class="nb">「採用の実務」が、</span><span class="nb">まるごと無くなる</span></h2>
+    <h2 class="big-state"><span class="nb">採用で、</span><span class="nb">こんなお悩みは</span><span class="nb">ありませんか？</span></h2>
     <div class="bubbles">
-      <div class="bubble">採用費を払っても、応募が来ない</div>
-      <div class="bubble">日程調整の途中で、連絡がつかなくなる</div>
-      <div class="bubble">面接を設定したのに、当日に来ない</div>
-      <div class="bubble">エージェントの成功報酬が高すぎる</div>
+      <div class="bubble">人材紹介の成果報酬が高すぎる</div>
+      <div class="bubble">人事業務に割く時間が作れない</div>
+      <div class="bubble">応募者対応や求めていない方との面接対応に追われて、採用につながっていない</div>
+      <div class="bubble">費用をかけても応募が集まらない</div>
     </div>
-    <p class="turn"><span class="nb">本業の合間の“片手間採用”では、</span><b><span class="nb">返信が半日遅れただけで</span><span class="nb">応募者は他社へ流れます。</span></b></p>
+    <p class="turn"><span class="nb">「採用コストは高い」</span><b><span class="nb">——その常識を、</span><span class="nb">ぶち壊したい。</span></b></p>
   </div>
 </section>
 
 <section class="sec-tint">
   <div class="wrap">
     <div style="text-align:center"><div class="eyebrow-en">SCOPE</div></div>
-    <h2 class="big-state"><span class="nb">スーパー人事くんが</span><br class="pc"><span class="nb">すべての採用の</span><span class="nb">最強のパートナーに</span></h2>
+    <h2 class="big-state"><span class="nb">採用業務を、</span><span class="nb">まるっと対応。</span></h2>
+    <p class="sec-sub"><span class="nb">採用戦略立案 → 応募獲得 → </span><span class="nb">スクリーニング → 面接設定。</span><br class="pc"><span class="nb">つまり、貴社は</span><span class="nb">最終面接だけでOKです。</span></p>
     <div class="scope">
       <div class="scope-card">
         <span class="ribbon ribbon-teal">スーパー人事くんが支援すること</span>
         <div class="svc">
           <div class="svc-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10.5 13h7M10.5 16.5h5"/></svg>
-            <span><span class="nb">求人票の</span><span class="nb">作成・改善・運用</span></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M7 20v-6M12 20V9M17 20v-9"/></svg>
+            <span><span class="nb">採用戦略の</span><span class="nb">立案</span></span>
           </div>
           <div class="svc-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="8" r="3.5"/><path d="M4 20c0-3.3 2.7-6 6-6"/><path d="M14 17.5l2.2 2.2 4-4"/></svg>
-            <span>候補者の選定</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10.5 13h7M10.5 16.5h5"/></svg>
+            <span><span class="nb">求人の</span><span class="nb">制作・改善</span></span>
+          </div>
+          <div class="svc-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h3l2-7 3 14 2.5-9 1.8 5H20"/></svg>
+            <span><span class="nb">掲載媒体の</span><span class="nb">選定・運用</span></span>
           </div>
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>
@@ -518,15 +559,11 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
           </div>
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16l-6.2 7.2V18l-3.6 2.4v-8.2z"/></svg>
-            <span><span class="nb">1次スクリーニング</span><span class="nb">の対応</span></span>
+            <span>スクリーニング</span>
           </div>
           <div class="svc-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M4 10.5h16M8.5 4v4M15.5 4v4"/><circle cx="12" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg>
-            <span><span class="nb">最終面接の</span><span class="nb">日程調整</span></span>
-          </div>
-          <div class="svc-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M7 20v-6M12 20V9M17 20v-9"/></svg>
-            <span><span class="nb">月次レポート・</span><span class="nb">定例MTG</span></span>
+            <span><span class="nb">面接の</span><span class="nb">日程調整</span></span>
           </div>
         </div>
       </div>
@@ -543,15 +580,15 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
     <div class="point">
       <div class="point-copy">
         <div class="point-eyebrow">POINT 1</div>
-        <h3>定額だから、<br>面接し放題・採用し放題</h3>
-        <p><span class="nb">面接数・採用人数に上限を設けていません。</span><span class="nb">何名採用しても追加費用は0円。</span><span class="nb">人数が増えるほど、</span><span class="nb">1名あたりの採用コストは</span><span class="nb">下がっていきます。</span></p>
+        <h3>月10万円からの<br>定額制</h3>
+        <p><span class="nb">採用人数による追加費用は0円です。</span><span class="nb">何名採用しても月額は変わらないため、</span><span class="nb">採用の計画と予算を</span><span class="nb">先に決められます。</span></p>
       </div>
       <div class="mock">
         <span class="mock-tag">何名採用しても定額</span>
         <div class="mock-card">
           <div class="mock-row"><span>今月の採用人数</span><span>3名</span></div>
           <div class="mock-zero"><i>追加費用</i><b>0</b><i>円</i></div>
-          <p class="mock-cap">※各種オプションは別途料金</p>
+          <p class="mock-cap">※ご支援内容に応じて料金が異なります</p>
         </div>
       </div>
     </div>
@@ -559,15 +596,15 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
     <div class="point">
       <div class="point-copy">
         <div class="point-eyebrow">POINT 2</div>
-        <h3>貴社の対応は、<br>“最終面接だけ”</h3>
-        <p><span class="nb">求人票の作成から</span><span class="nb">1次スクリーニングまで</span><span class="nb">丸ごとお任せいただけます。</span><span class="nb">貴社にお願いするのは、</span><span class="nb">初回ヒアリングと、</span><span class="nb">絞り込まれた候補者との</span><span class="nb">最終面接だけです。</span></p>
+        <h3>戦略立案から面接設定まで、<br>まるっと対応</h3>
+        <p><span class="nb">採用戦略の立案から求人制作、</span><span class="nb">応募獲得、</span><span class="nb">スクリーニング、</span><span class="nb">面接設定まで代行します。</span><span class="nb">貴社にお願いするのは、</span><span class="nb">初回のヒアリングと</span><span class="nb">最終面接だけです。</span></p>
       </div>
       <div class="mock">
         <span class="mock-tag">貴社の作業はこれだけ</span>
         <div class="mock-card">
-          <div class="mock-row"><span>求人票の作成</span><span class="ok">おまかせ</span></div>
-          <div class="mock-row"><span>応募者への一次対応</span><span class="ok">おまかせ</span></div>
-          <div class="mock-row"><span>日程調整・1次スクリーニング</span><span class="ok">おまかせ</span></div>
+          <div class="mock-row"><span>採用戦略の立案</span><span class="ok">おまかせ</span></div>
+          <div class="mock-row"><span>求人制作・応募獲得</span><span class="ok">おまかせ</span></div>
+          <div class="mock-row"><span>スクリーニング・面接設定</span><span class="ok">おまかせ</span></div>
           <div class="mock-row"><span>最終面接</span><span class="you">貴社</span></div>
         </div>
       </div>
@@ -576,16 +613,16 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
     <div class="point">
       <div class="point-copy">
         <div class="point-eyebrow">POINT 3</div>
-        <h3>初期費用・成果報酬・<br>広告費、ぜんぶ0円</h3>
-        <p><span class="nb">いただくのは月額の代行費のみ。</span><span class="nb">広告費も原則0円で運用し、</span><span class="nb">有料媒体が有効と判断した場合は、</span><span class="nb">必ず事前にご相談したうえで</span><span class="nb">のみ利用します。</span><span class="nb">無断で費用が発生することは</span><span class="nb">ありません。</span></p>
+        <h3>成果につなげる<br>採用メソッド</h3>
+        <p><span class="nb">企業ごとにカスタマイズした採用戦略と、</span><span class="nb">独自の高速PDCAによる効果改善、</span><span class="nb">独自のスクリーニングシステム。</span><span class="nb">だから、貴社が欲しい人材に</span><span class="nb">刺さる求人を構築できます。</span></p>
       </div>
       <div class="mock">
-        <span class="mock-tag">かかるのは月額だけ</span>
+        <span class="mock-tag">成果につなげる3つの型</span>
         <div class="mock-card">
-          <div class="mock-row"><span>初期費用</span><span>0円</span></div>
-          <div class="mock-row"><span>成果報酬</span><span>0円</span></div>
-          <div class="mock-row"><span>広告費</span><span>原則0円</span></div>
-          <div class="mock-row"><span>月額（税別）</span><span style="color:var(--teal)">100,000円〜</span></div>
+          <div class="mock-row"><span>企業ごとの採用戦略</span><span class="ok">カスタマイズ</span></div>
+          <div class="mock-row"><span>効果改善</span><span class="ok">独自の高速PDCA</span></div>
+          <div class="mock-row"><span>応募者の見極め</span><span class="ok">独自システム</span></div>
+          <p class="mock-cap">※貴社が欲しい人材に刺さる求人を構築します</p>
         </div>
       </div>
     </div>
@@ -594,8 +631,8 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
 
 <div class="band">
   <div class="wrap">
-    <h2><span class="nb">採用の実務に、</span><span class="nb">もう時間を使わない。</span></h2>
-    <p><span class="nb">詳しくは、</span><span class="nb">お問い合わせください。</span><span class="nb">いまの採用状況に合わせた</span><span class="nb">進め方をご提案します。</span></p>
+    <h2><span class="nb">採用人事は、</span><span class="nb">まるっとお任せください。</span></h2>
+    <p><span class="nb">貴社に合った採用方法を、</span><span class="nb">まずは無料でご相談ください。</span></p>
     <div class="band-cta">
       <a class="pill pill-white pill-lg" href="/contact.html">無料相談する<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
       <a class="pill pill-ink pill-lg" href="tel:0120058053">0120-058-053<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span></a>
@@ -606,15 +643,83 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
 <section id="results">
   <div class="wrap">
     <div style="text-align:center"><div class="eyebrow-en">RESULTS</div></div>
-    <h2 class="big-state"><span class="nb">支援開始から</span><span class="nb">1ヶ月間の応募数</span></h2>
-    <p class="sec-sub"><span class="nb">実際に当社が求人票の作成から運用まで</span><span class="nb">行った職種の実績です。</span></p>
-
+    <h2 class="big-state"><span class="nb">数字で見る</span><span class="nb">スーパー人事くん</span></h2>
     <div class="res">
-      <div class="rcard"><div class="rjob">マーケティング職</div><div class="rnum">84<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
-      <div class="rcard"><div class="rjob">医療事務</div><div class="rnum">47<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
-      <div class="rcard"><div class="rjob">倉庫作業員</div><div class="rnum">38<small>応募</small></div><div class="rlbl">支援開始から1ヶ月</div></div>
+      <div class="rcard"><div class="rjob">顧客満足度</div><div class="rnum">98<small>％</small></div><div class="rlbl">ご利用企業さま</div></div>
+      <div class="rcard"><div class="rjob">契約継続率</div><div class="rnum">96<small>％</small></div><div class="rlbl">ご利用企業さま</div></div>
+      <div class="rcard"><div class="rjob">利用可能期間</div><div class="rnum">1<small>ヶ月〜</small></div><div class="rlbl">最短のご契約期間</div></div>
     </div>
-    <p class="note"><span class="nb">※ 職種・エリア・</span><span class="nb">募集条件により成果は異なります。</span><span class="nb">応募数を保証するものではありません。</span></p>
+    <p class="note"><span class="nb">※ 成果は職種・エリア・</span><span class="nb">募集条件により異なります。</span><span class="nb">応募数・採用を保証するものではありません。</span></p>
+  </div>
+</section>
+
+<section class="sec-tint" id="voices">
+  <div class="wrap">
+    <div style="text-align:center"><div class="eyebrow-en">VOICE</div></div>
+    <h2 class="big-state"><span class="nb">ご利用いただいた</span><span class="nb">企業様の声</span></h2>
+    <div class="bubbles">
+      <div class="bubble"><span class="nb">最終面接の判断に集中できるようになり、</span><span class="nb">採用人数を増やすことができました。</span><small>クリニック R社様／導入前のお悩み: 応募数 月47件・応募者対応に追われ、面接や採用判断の時間が確保できていなかった</small></div>
+      <div class="bubble"><span class="nb">採用が出た時だけ採用業務をまるごと</span><span class="nb">お任せできるので、</span><span class="nb">採用人件費を抑えることができました。</span><small>建設業 A社様／導入前のお悩み: 採用人数 月5名・採用がない時期の人事コストが発生していた</small></div>
+      <div class="bubble"><span class="nb">弊社に合わせた採用を設計いただいたおかげで</span><span class="nb">応募単価が3分の1になりました。</span><small>飲食店 M様／導入前のお悩み: 応募単価 1,921円・どの媒体を使えばいいか分からなかった</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <div style="text-align:center"><div class="eyebrow-en">COMPARE</div></div>
+    <h2 class="big-state"><span class="nb">スーパー人事くんは、</span><span class="nb">ここが違う。</span></h2>
+    <div class="cmp">
+      <div class="cmp-row cmp-head">
+        <div class="cmp-c">比較項目</div>
+        <div class="cmp-c cmp-mine">スーパー人事くん</div>
+        <div class="cmp-c">人材紹介</div>
+        <div class="cmp-c">求人広告</div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-c cmp-th">料金体系</div>
+        <div class="cmp-c cmp-mine"><i class="cl">スーパー人事くん</i><b>月10万円〜の定額制</b></div>
+        <div class="cmp-c"><i class="cl">人材紹介</i>想定年収の30〜40％</div>
+        <div class="cmp-c"><i class="cl">求人広告</i>掲載費用</div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-c cmp-th">採用戦略の立案</div>
+        <div class="cmp-c cmp-mine"><i class="cl">スーパー人事くん</i><b>対応</b></div>
+        <div class="cmp-c"><i class="cl">人材紹介</i>一部対応</div>
+        <div class="cmp-c"><i class="cl">求人広告</i>非対応</div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-c cmp-th">求人制作・応募獲得</div>
+        <div class="cmp-c cmp-mine"><i class="cl">スーパー人事くん</i><b>対応</b></div>
+        <div class="cmp-c"><i class="cl">人材紹介</i>非対応</div>
+        <div class="cmp-c"><i class="cl">求人広告</i>一部対応</div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-c cmp-th">スクリーニング</div>
+        <div class="cmp-c cmp-mine"><i class="cl">スーパー人事くん</i><b>対応</b></div>
+        <div class="cmp-c"><i class="cl">人材紹介</i>対応</div>
+        <div class="cmp-c"><i class="cl">求人広告</i>非対応</div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-c cmp-th">面接の日程調整</div>
+        <div class="cmp-c cmp-mine"><i class="cl">スーパー人事くん</i><b>対応</b></div>
+        <div class="cmp-c"><i class="cl">人材紹介</i>対応</div>
+        <div class="cmp-c"><i class="cl">求人広告</i>非対応</div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-c cmp-th">採用人数による<br>追加費用</div>
+        <div class="cmp-c cmp-mine"><i class="cl">スーパー人事くん</i><b>0円</b></div>
+        <div class="cmp-c"><i class="cl">人材紹介</i>1名採用あたり成果報酬</div>
+        <div class="cmp-c"><i class="cl">求人広告</i>掲載ごとに費用</div>
+      </div>
+      <div class="cmp-row">
+        <div class="cmp-c cmp-th">広告費</div>
+        <div class="cmp-c cmp-mine"><i class="cl">スーパー人事くん</i><b>基本0円</b><small>媒体によっては成功報酬あり</small></div>
+        <div class="cmp-c"><i class="cl">人材紹介</i>—</div>
+        <div class="cmp-c"><i class="cl">求人広告</i>掲載費として必要</div>
+      </div>
+    </div>
+    <p class="note"><span class="nb">※ 人材紹介・</span><span class="nb">求人広告の内容は一般的な例です。</span><span class="nb">実際の条件は各社・</span><span class="nb">各媒体により異なります。</span></p>
   </div>
 </section>
 
@@ -622,31 +727,35 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
   <div class="wrap narrow">
     <div style="text-align:center"><div class="eyebrow-en">PLAN</div></div>
     <h2 class="big-state">プラン・料金</h2>
-    <p class="sec-sub"><span class="nb">月額の代行費だけの、</span><span class="nb">ひとつのプランです。</span><span class="nb">人数や成果による</span><span class="nb">追加請求はありません。</span></p>
+    <p class="sec-sub"><span class="nb">月額の代行費だけの、</span><span class="nb">定額制です。</span><span class="nb">ご支援内容に応じて料金が異なるため、</span><span class="nb">最適なプランをご提案します。</span></p>
     <dl class="plan-rows">
       <div class="plan-row">
-        <dt>月額料金（税別）</dt>
-        <dd><b>100,000</b> 円〜／月<small>初期費用0円・契約は月単位</small></dd>
-      </div>
-      <div class="plan-row">
-        <dt>面接・採用人数</dt>
-        <dd>上限なし<small>何名採用しても追加費用はかかりません</small></dd>
+        <dt>月額料金</dt>
+        <dd><b>100,000</b> 円〜／月<small>ご支援内容に応じて最適なプランをご提案します</small></dd>
       </div>
       <div class="plan-row">
         <dt>月額に含まれる業務</dt>
-        <dd><span class="nb">求人票の作成・</span><span class="nb">改善・運用／</span><span class="nb">候補者の選定／</span><span class="nb">応募者への一次対応／</span><span class="nb">1次スクリーニングの対応／</span><span class="nb">最終面接の日程調整／</span><span class="nb">月次レポート／</span><span class="nb">定例ミーティング（月1回）</span></dd>
+        <dd><span class="nb">採用戦略の立案／</span><span class="nb">求人の制作・改善／</span><span class="nb">掲載媒体の選定・運用／</span><span class="nb">応募者への一次対応／</span><span class="nb">スクリーニング／</span><span class="nb">面接の日程調整</span></dd>
       </div>
       <div class="plan-row">
-        <dt>広告費</dt>
-        <dd>原則0円<small><span class="nb">有料媒体は事前にご相談のうえでのみ利用し、</span><span class="nb">別途お見積りします</span></small></dd>
+        <dt>採用人数による追加費用</dt>
+        <dd>0円<small>何名採用しても月額は変わりません</small></dd>
+      </div>
+      <div class="plan-row">
+        <dt>求人の広告費</dt>
+        <dd>基本0円<small><span class="nb">媒体によっては成功報酬が発生する場合があります。</span><span class="nb">ご希望のプランに合わせてご提案します</span></small></dd>
+      </div>
+      <div class="plan-row">
+        <dt>ご契約期間</dt>
+        <dd>最短1ヶ月〜<small>運用開始は最短3営業日から</small></dd>
       </div>
     </dl>
     <div class="plan-badges">
-      <span class="pbadge">初期費用 0円</span>
+      <span class="pbadge">採用人数による追加費用 0円</span>
       <span class="pbadge">成果報酬 0円</span>
-      <span class="pbadge">面接・採用人数 上限なし</span>
-      <span class="pbadge">正社員特化</span>
-      <span class="pbadge">契約は月単位</span>
+      <span class="pbadge">広告費 基本0円</span>
+      <span class="pbadge">最短1ヶ月〜</span>
+      <span class="pbadge">全業種・全職種対応</span>
     </div>
   </div>
 </section>
@@ -654,14 +763,14 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
 <section id="flow">
   <div class="wrap">
     <div style="text-align:center"><div class="eyebrow-en">FLOW</div></div>
-    <h2 class="big-state"><span class="nb">ご相談から</span><span class="nb">採用までの流れ</span></h2>
+    <h2 class="big-state"><span class="nb">無料相談から</span><span class="nb">採用までの流れ</span></h2>
     <div class="tl">
-      <div class="tl-row"><div class="tl-n">01</div><div><h3>無料相談（オンライン可）</h3><p><span class="nb">いまの採用状況と、</span><span class="nb">採りたい人物像をお伺いします。</span><span class="nb">ご相談は無料です。</span></p></div></div>
-      <div class="tl-row"><div class="tl-n">02</div><div><h3>ご契約・初回ヒアリング</h3><p><span class="nb">求人票をつくるために</span><span class="nb">必要なことを</span><span class="nb">まとめてお聞きします。</span><span class="nb">貴社の作業はここで一度終わります。</span></p></div></div>
-      <div class="tl-row"><div class="tl-n">03</div><div><h3>求人票の作成・掲載</h3><p><span class="nb">貴社の魅力を引き出す求人票を作成し、</span><span class="nb">掲載の設定まで行います。</span></p></div></div>
-      <div class="tl-row"><div class="tl-n">04</div><div><h3>応募対応・日程調整・1次スクリーニング</h3><p><span class="nb">応募者への連絡、</span><span class="nb">日程の調整、</span><span class="nb">1次スクリーニングまで当社が対応します。</span></p></div></div>
-      <div class="tl-row"><div class="tl-n">05</div><div><h3>最終面接（貴社）</h3><p><span class="nb">絞り込まれた候補者と会って、</span><span class="nb">採用をお決めください。</span></p></div></div>
-      <div class="tl-row"><div class="tl-n">06</div><div><h3>月次レポート・定例ミーティング</h3><p><span class="nb">応募と選考の状況をご報告し、</span><span class="nb">次の打ち手を一緒に決めます。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">01</div><div><h3>無料相談・お問い合わせ</h3><p><span class="nb">採用したい職種や</span><span class="nb">お悩みをお聞かせください。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">02</div><div><h3>ヒアリング・採用プランのご提案</h3><p><span class="nb">人物像や条件を整理し、</span><span class="nb">進め方をご提案します。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">03</div><div><h3>ご契約・採用準備</h3><p><span class="nb">採用戦略を立案し、</span><span class="nb">求人制作を進めます。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">04</div><div><h3>求人公開・応募獲得</h3><p><span class="nb">運用を開始し、</span><span class="nb">応募状況を見ながら改善します。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">05</div><div><h3>スクリーニング・面接設定</h3><p><span class="nb">条件に沿って応募者を確認し、</span><span class="nb">面接を設定します。</span></p></div></div>
+      <div class="tl-row"><div class="tl-n">06</div><div><h3>最終面接・採用判断</h3><p><span class="nb">貴社で最終面接と</span><span class="nb">採否判断を行います。</span></p></div></div>
     </div>
   </div>
 </section>
@@ -671,33 +780,33 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
     <div style="text-align:center"><div class="eyebrow-en">FAQ</div></div>
     <h2 class="big-state">よくあるご質問</h2>
     <div class="faq">
-      <details open>
-        <summary><span class="nb">「採用し放題」とありますが、</span><span class="nb">本当に何名採用しても</span><span class="nb">追加料金はかからないのですか？</span></summary>
-        <div class="faq-a"><span class="nb">はい。面接数・</span><span class="nb">採用人数による追加請求は</span><span class="nb">一切ありません。</span><span class="nb">いただくのは月額の代行費のみです。</span><span class="nb">有料媒体への出稿が必要な場合だけ、</span><span class="nb">事前にご相談したうえで</span><span class="nb">別途お見積りします。</span></div>
+      <details>
+        <summary><span class="q-t"><span class="nb">月10万円には、</span><span class="nb">どこまでの業務が含まれますか？</span></span></summary>
+        <div class="faq-a"><span class="nb">採用戦略の立案から応募獲得、</span><span class="nb">スクリーニング、</span><span class="nb">面接設定まで対応いたします。</span><span class="nb">ご支援内容に応じて料金が異なるため、</span><span class="nb">最適なプランをご提案いたします。</span></div>
       </details>
       <details>
-        <summary><span class="nb">何件くらい応募が来ますか。</span><span class="nb">件数の保証はありますか？</span></summary>
-        <div class="faq-a"><span class="nb">応募数の保証はしておりません。</span><span class="nb">応募の集まりやすさは</span><span class="nb">職種・エリア・</span><span class="nb">条件によって</span><span class="nb">大きく変わるためです。</span><span class="nb">無料相談の中で、</span><span class="nb">貴社の職種に近い実績をもとに</span><span class="nb">目安をお伝えします。</span></div>
+        <summary><span class="q-t"><span class="nb">求人の広告費は、</span><span class="nb">別途必要ですか？</span></span></summary>
+        <div class="faq-a"><span class="nb">基本0円です。</span><span class="nb">ご希望のプランに合わせてご提案いたします。</span></div>
       </details>
       <details>
-        <summary>これは人材紹介のサービスですか？</summary>
-        <div class="faq-a"><span class="nb">いいえ。採用実務の運用代行サービスです。</span><span class="nb">採用が決まった時点で</span><span class="nb">成功報酬が発生する</span><span class="nb">仕組みではなく、</span><span class="nb">月額固定で採用の実務を</span><span class="nb">お引き受けする契約です。</span></div>
+        <summary><span class="q-t"><span class="nb">採用人数によって</span><span class="nb">追加料金は発生しますか？</span></span></summary>
+        <div class="faq-a">発生しません。</div>
       </details>
       <details>
-        <summary><span class="nb">対応できる業種・</span><span class="nb">職種・エリアに</span><span class="nb">制限はありますか？</span></summary>
-        <div class="faq-a"><span class="nb">すべての業種・</span><span class="nb">職種・エリアに</span><span class="nb">対応しています。</span><span class="nb">募集条件によっては</span><span class="nb">採用までにお時間を</span><span class="nb">いただく場合が</span><span class="nb">ありますので、</span><span class="nb">まずは無料相談で</span><span class="nb">ご状況をお聞かせください。</span></div>
+        <summary><span class="q-t">最低契約期間はありますか？</span></summary>
+        <div class="faq-a"><span class="nb">最短1ヶ月からご利用可能です。</span></div>
       </details>
       <details>
-        <summary><span class="nb">1次スクリーニングまで任せて、</span><span class="nb">うちの基準とずれませんか？</span></summary>
-        <div class="faq-a"><span class="nb">初回ヒアリングで、</span><span class="nb">求める人物像・</span><span class="nb">外せない条件・</span><span class="nb">見送りたい条件を</span><span class="nb">細かくお伺いし、</span><span class="nb">その基準に沿って1次スクリーニングを</span><span class="nb">行います。</span><span class="nb">基準は運用しながら</span><span class="nb">定例ミーティングで</span><span class="nb">調整していきます。</span></div>
+        <summary><span class="q-t"><span class="nb">どのような業種・</span><span class="nb">職種に対応していますか？</span></span></summary>
+        <div class="faq-a"><span class="nb">すべての業種・</span><span class="nb">職種に対応しております。</span></div>
       </details>
       <details>
-        <summary>契約期間の縛りはありますか？</summary>
-        <div class="faq-a"><span class="nb">契約は月単位です。</span><span class="nb">長期の縛りは設けていません。</span></div>
+        <summary><span class="q-t"><span class="nb">運用開始までに、</span><span class="nb">どのくらいかかりますか？</span></span></summary>
+        <div class="faq-a"><span class="nb">最短3営業日から</span><span class="nb">運用開始となります。</span></div>
       </details>
       <details>
-        <summary>広告費は本当に0円ですか？</summary>
-        <div class="faq-a"><span class="nb">原則0円で運用します。</span><span class="nb">採用の難易度が</span><span class="nb">高く有料媒体の利用が</span><span class="nb">有効と判断した場合のみ、</span><span class="nb">事前にご相談し、</span><span class="nb">ご了承をいただいたうえで利用します。</span><span class="nb">無断で広告費が発生することはありません。</span></div>
+        <summary><span class="q-t"><span class="nb">会社側で対応する業務は</span><span class="nb">何ですか？</span></span></summary>
+        <div class="faq-a"><span class="nb">基本、最終面接のみのご対応となります。</span><span class="nb">企業様の採用フローに合わせたご支援も可能です。</span><span class="nb">ご支援内容に応じて料金が異なるため、</span><span class="nb">最適なプランをご提案いたします。</span></div>
       </details>
     </div>
   </div>
@@ -707,10 +816,9 @@ footer{border-top:1px solid var(--line);padding:2.75rem 0 2.25rem}
   <div class="wrap">
     <div class="eyebrow-en">CONTACT</div>
     <h2 class="big-state">まずは、無料相談から。</h2>
-    <p class="sec-sub">いまの採用状況をお伺いし、貴社に合う進め方をご提案します。<br class="pc">ご相談は無料です。</p>
+    <p class="sec-sub"><span class="nb">採用したい職種や</span><span class="nb">現在のお悩みを、</span><span class="nb">お気軽にお聞かせください。</span><br class="pc"><span class="nb">ご相談は無料です。</span></p>
     <div class="contact-cta">
       <a class="pill pill-red pill-lg" href="/contact.html">お問い合わせ<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
-      <a class="pill pill-ink pill-lg" href="/contact.html">資料ダウンロード<span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span></a>
     </div>
     <div class="contact-tel">
       <div class="lbl">お電話でのご相談（通話無料）</div>
