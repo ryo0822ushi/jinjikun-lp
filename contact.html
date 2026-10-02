@@ -77,12 +77,13 @@ a{color:inherit}
 .field label{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:0.8438rem;margin-bottom:0.25rem}
 .req{color:var(--red);font-size:0.6875rem;border:1px solid var(--red);border-radius:0.25rem;padding:1px 0.4375rem;margin-left:0.5rem;vertical-align:2px;font-weight:700}
 .opt{color:var(--muted);font-size:0.6875rem;border:1px solid var(--line);border-radius:0.25rem;padding:1px 0.4375rem;margin-left:0.5rem;vertical-align:2px;font-weight:700}
-.field input,.field select{
+.field input,.field select,.field textarea{
   width:100%;background:var(--tint);border:1.5px solid var(--line);border-radius:0.625rem;
   padding:0.625rem 0.875rem;font-size:0.9062rem;color:var(--ink);font-family:inherit;
 }
-.field input:focus,.field select:focus{outline:none;border-color:var(--teal);background:var(--ground)}
-.field input::placeholder{color:var(--muted);opacity:.7}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);background:var(--ground)}
+.field input::placeholder,.field textarea::placeholder{color:var(--muted);opacity:.7}
+.field textarea{resize:vertical;min-height:7.5rem;line-height:1.7;display:block}
 .field select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 1.25rem) 50%, calc(100% - 0.875rem) 50%;background-size:0.375rem 0.375rem;background-repeat:no-repeat}
 .err{display:none;color:var(--red);font-size:0.7812rem;margin-top:0.3125rem;font-weight:700}
 .field.invalid input{border-color:var(--red)}
@@ -178,7 +179,7 @@ footer{border-top:1px solid var(--line);padding:2.25rem 0 2rem}
 }
 /* iOSで入力時に画面が勝手に拡大するのを防ぐ（タッチ端末のみ） */
 @media (hover:none){
-  .field input,.field select{font-size:16px}
+  .field input,.field select,.field textarea{font-size:16px}
 }
 
 
@@ -238,12 +239,7 @@ footer{border-top:1px solid var(--line);padding:2.25rem 0 2rem}
         </div>
         <div class="field" data-name="topic">
           <label for="f-topic">お問い合わせ内容<span class="opt">任意</span></label>
-          <select id="f-topic">
-            <option value="">選択してください</option>
-            <option>サービスについて</option>
-            <option>料金について</option>
-            <option>スケジュールについて</option>
-          </select>
+          <textarea id="f-topic" rows="5" placeholder="ご質問・ご相談内容をご自由にご記入ください（例：募集中の職種、採用したい人数、ご予算など）"></textarea>
         </div>
 
         <label class="agree-check"><input type="checkbox" id="f-agree"><span>個人情報の取扱い（<a href="#" data-privacy>プライバシーポリシー</a>）について同意する</span></label>
